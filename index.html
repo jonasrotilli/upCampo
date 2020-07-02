@@ -28,13 +28,13 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tópicos</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Básico</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#1">Entendendo a estrutura de cadastros</a>
+                            <a href="#estrutura_cadastro">Entendendo a estrutura de cadastros</a>
                         </li>
                         <li>
-                            <a href="#2">Criando a empresas e fazendas</a>
+                            <a href="#criando_empresa">Criando a empresas e fazendas</a>
                         </li>
                         <li>
                             <a href="#3">Criando usuários e permissões</a>
@@ -71,27 +71,57 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <h2>Bem vindo a documentação upCampo!</h2>
+            <h2 id="inicio">Bem vindo a documentação upCampo!</h2>
           
             <p>Do lado esquerdo desta p&aacute;gina esta os t&oacute;picos ou aqui abaixo, basta clicar em cima para visualizar!</p>
-<p>Se precisar pesquisar pressione as teclas "<strong>Control + F</strong>" para pesquisar T&oacute;picos ou "<strong>Control + G</strong>" para pesquisar palavras.</p>
+<p>Se precisar pesquisar pressione as teclas "<strong>Control + F</strong>" para pesquisar T&oacute;picos e Palavras.</p>
 <p>Qualquer d&uacute;vida n&atilde;o deixe de nos contactar pelos nossos canais:</p>
 <p>E-mail:&nbsp;<strong><a href="mailto:contato@upcampo.com.br" target="_blank" rel="nofollow noopener">contato@upcampo.com.br</a></strong></p>
-<p>Whatsapp:&nbsp;<strong>67-81478550</strong></p>
-            <p>&nbsp;</p>
+<p>Whatsapp:&nbsp;<strong>67-9 8147 8550 (<a title="Link whatsapp" href="https://api.whatsapp.com/send?phone=+5567981478550&amp;text=Oi%20upCampo, preciso de ajuda!">clique aqui para abrir</a>)</strong></p>
+<p>&nbsp;</p>
 <p><strong><img src="https://upcampo.com.br/views/img/upCampo_logo_cortado.png" alt="upCampoLogo" width="220" height="244" /></strong></p>
-
-![alt text](https://upcampo.com.br/views/img/upCampo_logo_cortado.png)
+            
             <div class="line"></div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <h2 id="estrutura_cadastro">Entendendo a estrutura de cadastros</h2>
+            
+            <p>Empresa &gt; Fazendas (Filiais). Cada empresa pode ter varias fazendas (filiais). Alguns cadastros s&atilde;o compartilhados entre filiais da mesma empresa, um exemplo &eacute; o cadastro de pragas e safra. J&aacute; outros, s&atilde;o espec&iacute;ficos para cada filial, que &eacute; o caso dos Talh&otilde;es.</p>
+<p>Um detalhamento de cada cadastro "Por empresa" e "Por filial".</p>
+<p>Por empresa:</p>
+<ul>
+<li><strong>Todos do menu "B&aacute;sico"</strong>: Cultura, Variedade, Praga Safra, Grupo de armadilha, etc.</li>
+<li><strong>Menu "Lavoura"</strong>: Safra.</li>
+<li><strong>Menu "Estoque"</strong>: Classe de produto, Produto, Entidade e configura&ccedil;&atilde;o de rateio.</li>
+<li><strong>Menu "Operacional"</strong>: Bico, Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
+</ul>
+<p>Por filial:</p>
+<ul>
+<li><strong>Menu "Lavoura"</strong>: Talh&otilde;es, Plantio safra, Armadilha Safra, Pluviometro, Coleta de fardo, Rastreamento de fardo, Romaneio de colheita, Contrato de venda, Romaneio de Sa&iacute;da.Variedade, Praga Safra, Grupo de armadilha, etc.</li>
+<li><strong>Menu "Estoque"</strong>: Local de estoque, Local de descarga, Pedido, Transferencia entre locais, Emprestimo produto, Movimentacao e Contrato de tercerizados.</li>
+<li><strong>Menu "Operacional"</strong>: Equipe, frota, saida para frota, abastecimento, ordem de servi&ccedil;o.</li>
+</ul>
+            
             <div class="line"></div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <h2 id="criando_empresa>Criando a empresas e fazendas</h2>
+           
+            <p>Partindo do ponto que voc&ecirc; j&aacute; possua um cadastro na nossa plataforma &eacute; a hora de criar Empresas e Fazendas.</p>
+<p><strong>Dica importante:</strong>&nbsp;caso sejam mais de uma fazenda para a mesma empresa, mas que sejam pequenas ou compartilhem todas m&aacute;quinas, produto e estoque, crie apenas uma Empresa e Fazenda.</p>
+<p>Depois, nos cadastros de talh&atilde;o voc&ecirc; pode usar o campo Setor para idenficicar talh&atilde;o de cada fazenda.</p>
+<p><strong>Empresa</strong></p>
+<p>No menu "Arquivo" h&aacute; o item Empresa, ao acessar aparecer&aacute; a lista. H&aacute; um bot&atilde;o em azul chamado "Novo", pressione nele e preencha os campos e salve.</p>
+<p>Fa&ccedil;a isso para todas as empresas que possuir.</p>
+<p><strong>Fazenda/filial</strong></p>
+<p>Depois, v&aacute; para o item Fazenda do mesmo menu "Arquivo".</p>
+<p>Fa&ccedil;a a mesma coisa, pressione o bot&atilde;o "Novo", preencha os dados e salve. Fique atento no primeiro campo: "Empresa". &Eacute; isso que define de qual empresa essa fazenda/filial faz parte.</p>
+<p><strong>Usu&aacute;rios</strong></p>
+<p>Depois, v&aacute; para o menu Arquivo &gt; Usu&aacute;rios. Nessa tela ser&aacute; listada todas as empresas e suas filiais. Selecione a empresa, e a fazenda (ir&aacute; aparecer do lado da tabela de empresa).</p>
+<p>Na sequ&ecirc;quencia ir&aacute; aparecer no meio da tela (abaixo da tabela de Empresa e Fazenda) uma lista de usu&aacute;rios cadastrados dessa fazenda. Voce pode criar novos usu&aacute;rios, alterar senha, etc.</p>
+<p>Ao selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "menus" do sistema, para que voc&ecirc; defina permiss&atilde;o: Pode visualizar, inserir, editar ou excluir. Para definir, basta clicar em cima.</p>
+<p><strong>Dica</strong>: Existe um bot&atilde;o azul para liberar acesso total e tamb&eacute;m aplicar perfil de t&eacute;cnico.</p>
+<p><strong>Finaliza&ccedil;&atilde;o</strong></p>
+<p>Agora est&aacute; pronto para fazer outros cadastros necess&aacute;rios, como talh&atilde;o, safra, etc. Para isso, v&aacute; no menu "Sair" (o &uacute;ltimo) e logue novamente, selecionando a Empresa e Fazenda criada.</p>
+            
             <div class="line"></div>
 
             <h3>Lorem Ipsum Dolor</h3>
