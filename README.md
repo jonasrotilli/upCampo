@@ -13,6 +13,14 @@ Whatsapp: **67-81478550**
 
 ### Markdown
 
+<nav>
+  <ul>
+    <li><a href='/about' {% if current[1] == 'about' %}class='current'{% endif %}>about</a></li>
+    <li><a href='/blog' {% if current[1] == 'blog' %}class='current'{% endif %}>blog</a></li>
+    <li><a href='/contact' {% if current[1] == 'contact' %}class='current'{% endif %}>contact</a></li>
+  </ul>
+</nav>
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
