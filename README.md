@@ -10,6 +10,7 @@ Qualquer dúvida não deixe de nos contactar pelos nossos canais:
 E-mail: **contato@upcampo.com.br**
 
 Whatsapp: **67-81478550**
+{% include simple-menu.html %}
 
 ### Markdown
 
