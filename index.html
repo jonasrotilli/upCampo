@@ -140,6 +140,238 @@
 <p><strong>Configura&ccedil;&otilde;es gerais</strong></p>
 <p>Nesta guia h&aacute; op&ccedil;&otilde;es relativa a prefer&ecirc;ncias como "Tela inicial" e abastecimento entre outros.</p
         
+           <div class="line"></div>
+
+          <h2 id="criando_estrutura_basica">Criando a estrutura básica (lavoura)</h2>
+            
+        <p>A estrutura b&aacute;sica compreende no que &eacute; necess&aacute;rio para fazer levantamentos e ordens.</p>
+<p>&Eacute; principalmente os talh&otilde;es e o que foi plantado em cada talh&atilde;o em determinada safra.</p>
+<p>Ent&atilde;o a ordem de cadastros seria:</p>
+<ol>
+<li>
+<p><strong>Talh&atilde;o</strong>&nbsp;- no menu Lavoura &gt; Talh&atilde;o. Talh&atilde;o normalmente n&atilde;o sofre altera&ccedil;&otilde;es em cada safra.</p>
+</li>
+<li>
+<p><strong>Variedade</strong>&nbsp;- no menu B&aacute;sico &gt; Variedade.</p>
+</li>
+<li>
+<p><strong>Safra</strong>&nbsp;- no menu Lavoura &gt; Safra.</p>
+</li>
+<li>
+<p><strong>Plantio safra</strong>&nbsp;- no menu Lavoura &gt; Safra. &Eacute; aqui onde &eacute; relacionado o Talh&atilde;o com sua Cultura e suas variedades.</p>
+</li>
+</ol>
+<p>Opcionalmente h&aacute; tamb&eacute;m:</p>
+<ol start="4">
+<li>
+<p><strong>Pluvi&ocirc;metro</strong>&nbsp;- no menu Lavoura &gt; Pluvi&ocirc;metro.</p>
+</li>
+<li>
+<p><strong>Grupo de armadilha</strong>&nbsp;- no menu B&aacute;sico &gt; Grupo de Armadilha. &Eacute; um agrupamento de armadilhas, por exemplo "Armadilha para bicudo".</p>
+</li>
+<li>
+<p><strong>Armadilhas da safra</strong>&nbsp;- no menu Lavoura &gt; Armadilha Safra.</p>
+</li>
+</ol>
+<p>Nos documentos a seguir h&aacute; um detalhamento de cada item destes.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="talhao">Talhão</h2>
+        
+        <p>Os talh&otilde;es s&atilde;o as separa&ccedil;&otilde;es das &aacute;reas da fazenda, as "parcelas" ou "campos".&nbsp;<strong>Aten&ccedil;&atilde;o</strong>: s&oacute; aparece estes talh&otilde;es no aplicativo ap&oacute;s a defini&ccedil;&atilde;o de "Plantio da Safra" com este Talh&atilde;o, ou seja, primeiro crie os talh&otilde;es e depois defina o que vai plantar na tela Plantio da Safra.</p>
+<p>Est&aacute; no menu Lavoura &gt; Talh&atilde;o.</p>
+<p><strong>Inserir um de cada vez</strong>: atrav&eacute;s do bot&atilde;o "Novo".</p>
+<p>Os campos:</p>
+<ol>
+<li>
+<p>C&oacute;digo - num&eacute;rico, serve para facilitar a ordena&ccedil;&atilde;o em relat&oacute;rios.</p>
+</li>
+<li>
+<p>Descri&ccedil;&atilde;o - &eacute; o nome do talh&atilde;o, a maneira como voc&ecirc; identifica-o.</p>
+</li>
+<li>
+<p>Setor - serve para agrupar talh&otilde;es. Um bom exemplo &eacute; fazendas grandes onde &eacute; separado por Setor Sul, Norte, Oeste, etc. Tamb&eacute;m &eacute; usado para separar fazendas, quando os cadastros s&atilde;o compartilhados (produtos, frota, estoque, etc).</p>
+</li>
+<li>
+<p>Area - hectares total do talh&atilde;o. N&atilde;o confuda com hectares plantada em determinada safra.</p>
+</li>
+<li>
+<p>Ativo - quando ativo ele aparece nas op&ccedil;&otilde;es do Plantio Safra. Serve para desativar e n&atilde;o perder hist&oacute;rico de lan&ccedil;amentos.</p>
+</li>
+<li>
+<p>ID armaz. nuvem - &eacute; um n&uacute;mero interno que usamos para fazer a conex&atilde;o com o armazenamento em nuvem. Nunca deve ser alterado sem ajuda da equipe da upCampo.</p>
+</li>
+</ol>
+<p><strong>Importar de um arquivo excel</strong>: no bot&atilde;o "Importar de excel". Para isso formate o excel com as colunas acima. &Eacute; importante sempre deletar todas as linhas que n&atilde;o houverem dados. Baixe aqui um exemplo de arquivo.</p>
+<p><br /><br /></p>
+<p><strong>Coordenadas</strong></p>
+<p>Nesta guia &eacute; poss&iacute;vel importar um arquivo com as coordenadas do talh&atilde;o, ou seja, os limites dele. Os formatos poss&iacute;veis por enquanto s&atilde;o "shapefile" e "kmz - Google Earth". Para isso basta ir no bot&atilde;o "Importar arquivo", escolher o arquivo no seu computador e aguardar o mapa ser gerado. Se aparecer o desenho do mapa do talh&atilde;o, confirme para salvar.</p>
+<p>Ou &eacute; poss&iacute;vel desenhar manualmente pressionando o bot&atilde;o "Desenhar manualmente". Nesta op&ccedil;&atilde;o voc&ecirc; vai selecionando no mapa os pontos para formar os limites do talh&atilde;o.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="safra">Safra</h2>
+        
+        <p>Este cadastro &eacute; bastante simples. Preencha a descri&ccedil;&atilde;o, por exemplo: Safra 2022/2023.</p>
+<p>Esta safra ser&aacute; relacionada nos Plantio da Safra em muitos outros itens do sistema (Ordem de servi&ccedil;o, Movimenta&ccedil;&atilde;o de notas, Contrato de venda, etc).</p>
+<p>H&aacute; algumas guias (<strong>avan&ccedil;adas</strong>, no in&iacute;cio de sua jornada provalvelmente n&atilde;o usar&aacute; isso) para Par&acirc;metros de Colheita e outra guia para Arquivos. Veja os detalhes de cada:</p>
+<p><br /><br /><br /><strong>Parametro de colheita</strong></p>
+<p>&Eacute; aqui que &eacute; definido os Param&ecirc;tros para a colheita de cada cultura da fazenda. Por exemplo, se vai haver descontos de Umidade, Impureza, etc voc&ecirc; define aqui quais ser&atilde;o. Veja mais detalhes no t&oacute;pico "Configurando a colheita de gr&atilde;os".</p>
+<p>O&nbsp;<strong>produto</strong>&nbsp;que ser&aacute; o&nbsp;<strong>resultado da colheita</strong>&nbsp;tamb&eacute;m &eacute; definido aqui, &eacute; este produto que entrar&aacute; para o&nbsp;<strong>estoque</strong>. Exemplo: cultura "soja", desconto "padr&atilde;o xx", entrar&aacute; para estoque como o Produto "Soja 001". Ent&atilde;o ao realizar "romaneios de colheita" ser&aacute; aplicado os descontos "padr&atilde;o xx" e o peso l&iacute;quido (sem os descontos) entrar&aacute; no estoque do armaz&eacute;m selecionado no romaneio.</p>
+<p><br /><br /><strong>Arquivos</strong></p>
+<p>Nesta guia &eacute; exibido os arquivos que foram adicionados na pasta do Google Drive da safra. Voc&ecirc; pode adicionar arquivos diversos no Google Drive, como um arquivo Excel, PDF, imagens, etc. Nesta guia &eacute; poss&iacute;vel classificar o arquivo, definir uma data e um t&iacute;tulo para este arquivo, que facilita a busca depois.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="plantio_safra">Plantio da Safra</h2>
+        Uma dos principais cadastros, pois tudo começa com um Plantio. Somente depois deste cadastro é que o talhão aparece no aplicativo.
+
+Então nesta tela associamos o Talhão e a Cultura que está na Safra que você está logada. Também deve-se colocar a área total (em hectares). Sobre a área, ela pode ser menor que a area total do talhão, mas nunca maior.
+
+Logo no início há um campo chamado "Cor", isso serve para mostrar no gráfico de D.A.E presente na Dashboard. Como local preferencial, será buscado a cor aqui no Plantio Safra e quando não encontrado é buscado nas Variedades.
+
+Dependendo do tipo da cultura (Perene ou Anual) irá aparecer campos relativo a cultura, como "Plantas por hectare" ou "Distância entre ruas".
+
+Variedade
+
+Logo abaixo no cadastro há um quadro de cor de diferente para a variedade e uma opção: "Uma variedade" ou "Mais de uma variedade". Quando selecionado "uma variedade" é mais simples, basta preenchar a variedade desejada.
+
+Já quando é "mais de uma", aparece opções para ir adicionado muitas variedades. Lembrando que a área total das variedades não podem ser maiores que a área do talhão. Observação: um campo nas opções de "mais de uma variedade" é chamado de "Nome de exibição" serve para renomear esta variedade nas operações seguintes do sistema (ordens, aplicativo), isso se justifica quando o nome da Variedade é muito complexo, por exemplo em campos de experimento.
+
+Opções de separar por variedade
+
+Quando é selecionado a opção "Mais de uma variedade" aparece esta opção para definir se vai separar por variedade em "Levantamentos, Colheita, Plantio, etc".
+
+Basicamente quando marcado significa que todos os lançamentos deste Talhão + Variedade será separado no item em questão.
+
+Vamos ao exemplo: Um talhão chamado "TH 01" possui as variedades "98YRR" e "99YRR". Ao marcar a opção "Separar em levantamentos" aparecerá no aplicativo 2 itens disponíveis para fazer levantamentos ("TH 01 - 98YRR" e "TH 01 - 99YRR"), ou seja, os monitores terão que fazer levantamento para cada uma e cada variedade terá seus resultados separados.
+        
+        <div class="line"></div>
+
+          <h2 id="armadilha_safra">Armadilhas x Safra</h2>
+        
+        <p>S&atilde;o o cadastro de cada armadilha da sua fazenda.</p>
+<p>No campo "Grupo de armadilha" &eacute; a refer&ecirc;ncia a outro cadastro, para agrupar armadilhas por semelhan&ccedil;a. Por exemplo, "Armadilha para bicudo", "Armadilha para lagartas".</p>
+<p>Ent&atilde;o cadastre aqui cada armadilha que voc&ecirc; possuir, com sua localiza&ccedil;&atilde;o. Isso possibilitar&aacute; que no aplicativo, na tela de Armadilhas, o usu&aacute;rio colete periodicamente quantas pragas encontrou.<em>texto em it&aacute;lico</em></p>
+        
+        <div class="line"></div>
+
+          <h2 id="pluviometro">Pluviomêtros & estações metereológicas</h2>
+        
+        <p>Neste cadastro voc&ecirc; cria todos os seus pluvi&ocirc;metro ou esta&ccedil;&atilde;o metereol&oacute;gica.</p>
+<p><strong>Pra qu&ecirc;/por que?</strong>&nbsp;Para que voc&ecirc; grave todo o hist&oacute;rico de dados metereol&oacute;gicos da sua fazenda e possa comparar, avaliar e tomar decis&otilde;es baseado neste hist&oacute;rico. Possu&iacute;mos relat&oacute;rios e uma dashboard para visualizar estes dados.</p>
+<p><strong>Como?</strong></p>
+<p>No campo descri&ccedil;&atilde;o coloque um nome, uma refer&ecirc;ncia para identificar o pluvi&ocirc;metro/esta&ccedil;&atilde;o. Um exemplo seria: TH 01 e TH 02.</p>
+<p>O campo link API serve para que o sistema busque automaticamente dados da esta&ccedil;&atilde;o e importe na upCampo. Para mais detalhes desta integra&ccedil;&atilde;o, converse com nossa equipe!</p>
+<p>Abaixo h&aacute; guias para Talh&atilde;o, Localiza&ccedil;&atilde;o e Coletas. Vamos ver cada uma delas:</p>
+<p><strong>Talh&atilde;o</strong></p>
+<p>Aqui voc&ecirc; insere os talh&otilde;es que este pluvi&ocirc;metro/esta&ccedil;&atilde;o que se refere. Por exemplo, se voc&ecirc; possui um pluviometro que est&aacute; no cruzamento de 4 talh&otilde;es, adicione os 4 aqui.</p>
+<p>Isso far&aacute; com que o sistema entenda quais dados de chuva recuperar em relat&oacute;rios, dashboard pra cada talh&atilde;o.</p>
+<p><strong>Localiza&ccedil;&atilde;o</strong></p>
+<p>&Eacute; a localiza&ccedil;&atilde;o geogr&aacute;fica do pluvi&ocirc;metro/esta&ccedil;&atilde;o, latitude e longitude. Com isso conseguimos gerar mapas com cada pluvi&ocirc;metro/esta&ccedil;&atilde;o. A localiza&ccedil;&atilde;o pode ser configurada pelo Aplicativo, que captura automaticamente pelo GPS do dispositivo.</p>
+<p><strong>Coleta</strong></p>
+<p>Aqui &eacute; exibido as coletas desse pluvi&ocirc;metro/esta&ccedil;&atilde;o. As coletas normalmente s&atilde;o realizadas com o Aplicativo, direto do campo.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="levantamentos">Levantamentos</h2>
+        
+        <p>S&atilde;o os levantamentos MIP que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
+<p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
+<p>Para visualizar os levantamentos "prontos", acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="observacoes">Observações</h2>
+        
+        <p>S&atilde;o as observa&ccedil;&otilde;es que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
+<p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
+<p>Para visualizar junto com os levantamentos, acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="Análises">Análises</h2>
+        
+        <p>Aqui s&atilde;o as An&aacute;lises e Coletas realizadas da fazenda. De forma "bruta", pois est&atilde;o os dados em formato de listagem/banco de dados.</p>
+<p>Ainda em desenvolvimento, em breve haver&aacute; op&ccedil;&otilde;es para coletar amostras pelo Aplicativo e os dados "trabalhados" e "mapas" com resultados dessas an&aacute;lises coletadas.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="coletas_fardos">Coletas de fardos</h2>
+        <p>Se refere a coletas de fardos de algod&atilde;o.</p>
+<p>&Eacute; preciso re-lembrar a rotina na pr&aacute;tica: a colheitadeira recupera o algod&atilde;o das plantas e gera um fardo. Este fardo fica no campo e depois &eacute; coletado. Esta tela &eacute; relativo a esta coleta.</p>
+<p>Nosso aplicativo possui uma tela espec&iacute;fica para criar os fardos, onde o usu&aacute;rio vai registrando cada fardo direto do campo.</p>
+<p>E tamb&eacute;m h&aacute; no aplicativo tela espec&iacute;fica para coleta.</p>
+<p>Normalmente ap&oacute;s a coleta no campo &eacute; pesado na sede da fazenda e posteriomente beneficiado na algodoeira. Esta tela &eacute; onde &eacute; registrado estes pesos e beneficiamento.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="dashboard_levantamento">Dashboard Levantamentos MIP</h2>
+        
+        <p>Mostramos todas as informa&ccedil;&otilde;es coletadas no campo referente a Levantamentos. Hist&oacute;rico, mapas, gr&aacute;ficos, tudo para auxiliar a tomada de decis&atilde;o.</p>
+<p>&Eacute; a tela onde o tomador de decis&atilde;o referente a aplica&ccedil;&atilde;o de defensivos mais usa, por estar tudo centralizado.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="dashboard_armadilha">Dashboard Armadilhas</h2>
+        
+        <p>Centraliza as coletas de armadilhas e mostra no mapa a situa&ccedil;&atilde;o de cada armadilha.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="dashboard_pluviometro">Dashboard Pluviômetros</h2>
+        
+        <p>As coletas de dados metereol&oacute;gicos s&atilde;o exibidas em formato de gr&aacute;fico e futuramente em mapa.</p>
+<p>&Eacute; poss&iacute;vel filtrar per&iacute;odos e comparar entre pluvi&ocirc;metros.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="configurando_colheita">Configurando a colheita de grãos</h2>
+        
+        <p>Para a colheita de gr&atilde;os, que precisam de romaneios &eacute; necess&aacute;rio configurar alguns param&ecirc;tros. Ou seja, definir se vai haver descontos e qual tabela usar. Siga os passos:</p>
+<ol>
+<li>
+<p>Verifique quais descontos (Umidade, Impureza, Avariado, Ardido, Quebrado ou Armazenagem) dos romaneios de colheita ser&atilde;o usado para a safra;</p>
+</li>
+<li>
+<p>No menu "B&aacute;sico &gt; Desconto padr&atilde;o/Colheita gr&atilde;os" &eacute; onde voc&ecirc; deve criar este descontos.</p>
+</li>
+<li>
+<p>No menu "Lavoura &gt; Safra" selecione a safra em quest&atilde;o e na guia "Param&ecirc;tros de colheita".</p>
+</li>
+<li>
+<p>Defina a "Cultura" e o "Produto" que entrar&aacute; no estoque.</p>
+</li>
+<li>
+<p>Defina quais ser&atilde;o as tabelas de "Descontos" de cada item (Umidade, Avariado, etc). N&atilde;o &eacute; obrigat&oacute;rio ter descontos, para n&atilde;o usar basta deixar em branco.</p>
+</li>
+<li>
+<p>Ap&oacute;s os passos acima, o Romaneio de Colheita est&aacute; pronto. V&aacute; ao menu "Lavoura &gt; Romaneio de Colheita" e fa&ccedil;a um lan&ccedil;amento. Fique atento aos desconto, se houverem, lan&ccedil;e alguns descontos aleat&oacute;rios e verifique se est&aacute; puxando conforme necessidade. Verifique tamb&eacute;m o saldo do produto antes e depois dos lan&ccedil;amentos.</p>
+</li>
+<li>
+<p>Gere uma impress&atilde;o, pelo bot&atilde;o "relat&oacute;rio" a partir da tela de Romaneio (ao lado do bot&atilde;o salvar).</p>
+</li>
+<li>
+<p>Pronto! Boa colheita =)</p>
+</li>
+</ol>
+     
+        
+        <div class="line"></div>
+
+          <h2 id="classe_produto">Classe de produto</h2>
+        
+        <p>Cada produto pode ter uma classe. Isso &eacute; muito &uacute;til para agrupar produtos parecidos.</p>
+<p>Com esta organiza&ccedil;&atilde;o de Classes fica bastante f&aacute;cil obter informa&ccedil;&otilde;es como: "Qual classe de produtos eu tenho consumido mais", ou, "Gasto mais com herbicidas, fungicidas, ou qual classe?".</p>
+<p>O cadastro &eacute; b&aacute;sico, c&oacute;digo e descri&ccedil;&atilde;o.</p>
+        
+        <div class="line"></div>
+
+          <h2 id="produto">Produto</h2>
+        
+        <p>Cadastro muito importante para toda sequ&ecirc;ncia de controles de custos.</p>
+        
         </div>
     </div>
 
