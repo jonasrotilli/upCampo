@@ -89,7 +89,7 @@
                   </ul>
                </li>
                <li>
-                  <a href="#pageOperacional" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Operacional</a>
+                  <a href="#pageOperacional" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Estoque</a>
                   <ul class="collapse list-unstyled" id="pageOperacional">                  
                       <li>
                         <a href="#classe_produto">Classe de produto</a>
@@ -363,9 +363,59 @@
             <p>Cada produto pode ter uma classe. Isso &eacute; muito &uacute;til para agrupar produtos parecidos.</p>
             <p>Com esta organiza&ccedil;&atilde;o de Classes fica bastante f&aacute;cil obter informa&ccedil;&otilde;es como: "Qual classe de produtos eu tenho consumido mais", ou, "Gasto mais com herbicidas, fungicidas, ou qual classe?".</p>
             <p>O cadastro &eacute; b&aacute;sico, c&oacute;digo e descri&ccedil;&atilde;o.</p>
+            
             <div class="line"></div>
             <h2 id="produto">Produto</h2>
-            <p>Cadastro muito importante para toda sequ&ecirc;ncia de controles de custos.</p>
+
+<p>Cadastro muito importante para toda sequ&ecirc;ncia de controles de estoque e custos.</p>
+<p>Os campos obrigat&oacute;rios s&atilde;o a "descri&ccedil;&atilde;o" e "unidade". Todos os outros s&atilde;o opcionais, preencha sempre que poss&iacute;vel.</p>
+<p><strong>Sobre unidade, </strong>&eacute; importante escolher a unidade que normalmente &eacute; a sa&iacute;da do estoque, pois &eacute; dessa forma que voc&ecirc; vai mais usar.</p>
+<p><span style="color: #ff0000;"><strong>Importa&ccedil;&atilde;o de excel</strong></span></p>
+<p>Sabemos que &eacute; utilizado muitos produtos durante uma safra e possivelmente j&aacute; h&aacute; algum tipo de controle. Esta op&ccedil;&atilde;o existe para importar a partir de um arquivo excel.</p>
+<p>Quando clicar nesta op&ccedil;&atilde;o (que fica ali do lado direito do bot&atilde;o "novo"), aparece uma janela com a instru&ccedil;&atilde;o do formato do arquivo excel. Mais abaixo um bot&atilde;o chamado "Importar excel" que &eacute; o qual voc&ecirc; seleciona o arquivo excel.</p>
+<p><strong>Importante</strong>: exclua todas as linhas sem conte&uacute;do que normalmente fica no final do arquivo, ou seja, deixei apenas as linhas com conte&uacute;do.</p>
+<p><strong>Princ&iacute;pio ativo</strong></p>
+<p>H&aacute; uma guia chamada "Princ&iacute;pio ativo", para voc&ecirc; relacionar um ou mais princ&iacute;pios ativos. Isto &eacute; bastante importante para produtos qu&iacute;micos (fdefensivos, etc), pois na hora da cria&ccedil;&atilde;o da recomenda&ccedil;&atilde;o/ordem de servi&ccedil;o &eacute; poss&iacute;vel pesquisar pelo princ&iacute;pio.</p>
+<p>Como sabemos que normalmente h&aacute; v&aacute;rios princ&iacute;pios para um produto, existe um bot&atilde;o chamado "<strong>Importa&ccedil;&atilde;o r&aacute;pido/din&acirc;mico</strong>". Nessa op&ccedil;&atilde;o &eacute; poss&iacute;vel selecionar v&aacute;rios para adicionar de uma vez (&eacute; bem mais r&aacute;pido).</p>
+<p>O cadastro do princ&iacute;pio em si &eacute; mantido por n&oacute;s da upCampo, caso falte algum contate imediatamente pelo whatsapp que n&oacute;s adicionamos pra voc&ecirc;. Ou seja, voc&ecirc; s&oacute; relaciona quais princ&iacute;pios s&atilde;o do produto, o resto deixa com a gente.</p>
+         
+
+ <div class="line"></div>
+            <h2 id="produto">Local de estoque</h2>
+
+<p>&Eacute; o lugar onde &eacute; "guardado" os produtos. Tamb&eacute;m &eacute; chamado de Almoxarifado, Barrac&atilde;o, Armaz&eacute;m, Silo entre outros.</p>
+<p>Por exemplo, em uma fazenda normalmente h&aacute; os locais: "Barrac&atilde;o de defensivos", "Barrac&atilde;o de sementes", "Barrac&atilde;o de Adubos", "Silo geral", "Posto de combust&iacute;vel".</p>
+<p>O campo "Nome/descri&ccedil;&atilde;o &eacute; obrigat&oacute;rio.</p>
+<p>Ainda h&aacute; v&aacute;rias op&ccedil;&otilde;es, que &eacute; importante saber o que significa cada:</p>
+<ul>
+<li>Ativo - caso um local n&atilde;o exista mais ele precisa ser desativado e nunca exclu&iacute;do, para preservar o hist&oacute;rico de movimenta&ccedil;&otilde;es relacionadas;</li>
+<li>Controlar saldo - quando marcado n&atilde;o ser&aacute; permitido que o saldo fique menor que zero, ou seja, opera&ccedil;&otilde;es ser&atilde;o abortadas caso n&atilde;o haja saldo suficiente;<br /><br /></li>
+<li>Exibir na movimenta&ccedil;&atilde;o - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Movimenta&ccedil;&otilde;es (entrada de NF);<br /><br /></li>
+<li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Empr&eacute;stimo de produtos;<br /><br /></li>
+<li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Transfer&ecirc;ncia;<br /><br /></li>
+<li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Ordem de servi&ccedil;o;<br /><br /></li>
+<li>Pr&oacute;pio - para sinalizar que &eacute; um local seu, que voc&ecirc; tem total controle (n&atilde;o de terceiros, em terceiros);</li>
+<li>Abastecimento - sinaliza que &eacute; um "posto", isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a combust&iacute;veis;<br />Quando esta op&ccedil;&atilde;o abastecimento est&aacute; selecionada &eacute; exibida dois novos campos:
+<ul>
+<li>Produto (caso o local seja de um produto espec&iacute;fico, s&oacute; um);</li>
+<li>Campo infomrado no abastecimento: qual campo o usu&aacute;rio ir&aacute; preencher. Se for Leiutura inicial e final da bomba, o usu&aacute;rio precisar&aacute; preencher estes campos no momento do abastecimento. Se for Litros, ele informar&aacute; apenas o Litros que foram no abastecimento e o sistema ir&aacute; calcular a leitura final automaticamente.<br /><br /></li>
+</ul>
+</li>
+<li>Silo - sinaliza que &eacute; silo de armazenagem, isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a armazenagem (romaneios, contratos de venda, etc).<br /><br /></li>
+</ul>
+<p>Tamb&eacute;m a op&ccedil;&atilde;o Entidade (terc.), que &eacute; usada para associar este local a um terceiro. Muito usado quando sua fazenda recebe produtos de um vizinho (gr&atilde;os).</p>
+<p>L&aacute; em cima, ao lado do bot&atilde;o "novo", h&aacute; um bot&atilde;o chamado "<span style="color: #ff0000;"><strong>Ver estoque</strong></span>". Ele est&aacute; presente em todas as telas que h&aacute; movimenta&ccedil;&atilde;o de estoque e serve para mostrar imediatamente todos os produtos do seu estoque.</p>
+<p>&nbsp;</p>
+<p><strong>Estoque</strong></p>
+<p>Um local de estoque &eacute; um "agrupamento", local onde est&atilde;o um ou v&aacute;rios produtos. Cada um deste produto tem o seu "estoque", ou seja, seu saldo.</p>
+<p>Nesta guia &eacute; exibido todos os produtos que o local possui e seus saldos.&nbsp;</p>
+<p>Aqui &eacute; poss&iacute;vel alterar a <strong>capacidade total</strong> e <strong>estoque m&iacute;nimo</strong>. Quando houver produtos, selecione e poder&aacute; alterar estas op&ccedil;&otilde;es. S&atilde;o importantes para algumas situa&ccedil;&otilde;es, como combust&iacute;veis. Solicite a equipe configura&ccedil;&atilde;o de envio autom&aacute;tico de e-mail quando o estoque chegar o n&iacute;vel m&iacute;nimo.</p>
+<p>N&atilde;o &eacute; poss&iacute;vel adicionar por aqui um novo Estoque, nem alterar saldos, custos, etc.</p>
+<p>Toda movimenta&ccedil;&atilde;o do estoque &eacute; realizada pelas outras telas: Movimenta&ccedil;&atilde;o, Transfer&ecirc;ncia, Ordem de servi&ccedil;o, Empr&eacute;stimo, etc.</p>
+<p>&nbsp;</p>
+<p><strong>Bomba</strong></p>
+<p>Quando o local &eacute; um "posto de combust&iacute;vel" esta guia ter&aacute; q ser preenchida, para informar quais bombas existem. Normalmente cada bomba possui seu contador, e ele precisa ser informado nos abastecimentos.</p>
+
          </div>
       </div>
       <!-- jQuery CDN - Slim version (=without AJAX) -->
