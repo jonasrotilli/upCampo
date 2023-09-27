@@ -1,611 +1,477 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Documentação upCampo</title>
-      <!-- Bootstrap CSS CDN -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      <!-- Our Custom CSS -->
-      <link rel="stylesheet" href="style.css">
-      <!-- Font Awesome JS -->
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-   </head>
-   <body>
-      <div class="wrapper">
-         <!-- Sidebar  -->
-         <nav id="sidebar">
-            <div class="sidebar-header">
-               <h3>Documentação upCampo</h3>
-            </div>
-            <ul class="list-unstyled components">
-               <li class="active">
-                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Básico</a>
-                  <ul class="collapse list-unstyled" id="homeSubmenu">
-                     <li>
-                        <a href="#estrutura_cadastro">Entendendo a estrutura de cadastros</a>
-                     </li>
-                     <li>
-                        <a href="#criando_empresa">Criando a empresas e fazendas</a>
-                     </li>
-                     <li>
-                        <a href="#criando_usuario">Criando usuários e permissões</a>
-                     </li>
-                     <li>
-                        <a href="#criando_estrutura_basica">Criando a estrutura básica (lavoura)</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Lavoura</a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu">
-                     <li>
-                        <a href="#talhao">Talhão</a>
-                     </li>
-                     <li>
-                        <a href="#safra">Safra</a>
-                     </li>
-                     <li>
-                        <a href="#plantio_safra">Plantio da safra</a>
-                     </li>
-                     <li>
-                        <a href="#armadilha_safra">Armadilhas x Safra</a>
-                     </li>
-                     <li>
-                        <a href="#pluviometro">Pluviom&ecirc;tros &amp; esta&ccedil;&otilde;es metereol&oacute;gicas</a>
-                     </li>
-                     <li>
-                        <a href="#levantamentos">Levantamentos</a>
-                     </li>
-                     <li>
-                        <a href="#observacoes">Observa&ccedil;&otilde;es</a>
-                     </li>
-                      <li>
-                        <a href="#analises">An&aacute;lises</a>
-                     </li>
-                      <li>
-                        <a href="#coletas_fardos">Coletas de fardos</a>
-                     </li>
-                      <li>
-                        <a href="#dashboard_levantamento">Dashboard Levantamentos MIP</a>
-                     </li>
-                      <li>
-                        <a href="#dashboard_armadilha">Dashboard Armadilhas</a>
-                     </li>
-                      <li>
-                        <a href="#dashboard_pluviometro">Dashboard Pluvi&ocirc;metros</a>
-                     </li>
-                      <li>
-                        <a href="#configurando_colheita">Configurando a colheita de gr&atilde;os</a>
-                     </li>
-                      <li>
-                        <a href="#classe_produto">Classe de produto</a>
-                     </li>
-                      <li>
-                        <a href="#produto">Produto</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#pageOperacional" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Estoque</a>
-                  <ul class="collapse list-unstyled" id="pageOperacional">      
-                     <li>
-                        <a href="#entendendo_estoque">Entendendo o estoque</a>
-                     </li>            
-                      <li>
-                        <a href="#classe_produto">Classe de produto</a>
-                     </li>
-                      <li>
-                        <a href="#produto">Produto</a>
-                     </li>
-                      <li>
-                        <a href="#local_estoque">Local de estoque</a>
-                     </li>
-                     <li>
-                        <a href="#local_descarga">Local de descarga</a>
-                     </li>
-                     <li>
-                        <a href="#entidade">Entidade</a>
-                     </li>
-                  </ul>
-               </li>
-
-               <li>
-                  <a href="#pageNuvem" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nuvem</a>
-                  <ul class="collapse list-unstyled" id="pageNuvem">      
-                     <li>
-                        <a href="#entendendo_nuvem">Entendendo a nuvem da upCampo</a>
-                     </li>            
-                      <li>
-                        <a href="#conta_gmail">Criando conta no Gmail</a>
-                     </li>
-                      <li>
-                        <a href="#baixando_sincronizacao">Baixando programa para sincronização offline</a>
-                     </li>
-                      <li>
-                        <a href="#compartilhando_drive_equipe">Compartilhando entre a equipe</a>
-                     </li>
-                     <li>
-                        <a href="acessando_nuvem_na_plataforma">Acessando a nuvem de dentro da upCampo</a>
-                     </li>
-                    
-                  </ul>
-               </li>
-            </ul>
-          
-         </nav>
-         <!-- Page Content  -->
-         <div id="content">
-            <h2 id="inicio">Bem vindo a documentação upCampo!</h2>
-            <p>Do lado esquerdo desta p&aacute;gina esta os t&oacute;picos ou aqui abaixo, basta clicar em cima para visualizar!</p>
-            <p>Se precisar pesquisar pressione as teclas "<strong>Control + F</strong>" para pesquisar T&oacute;picos e Palavras.</p>
-            <p>Qualquer d&uacute;vida n&atilde;o deixe de nos contactar pelos nossos canais:</p>
-            <p>E-mail:&nbsp;<strong><a href="mailto:contato@upcampo.com.br" target="_blank" rel="nofollow noopener">contato@upcampo.com.br</a></strong></p>
-            <p>Whatsapp:&nbsp;<strong>67-9 8147 8550 (<a title="Link whatsapp" href="https://api.whatsapp.com/send?phone=+5567981478550&amp;text=Oi%20upCampo, preciso de ajuda!">clique aqui para abrir</a>)</strong></p>
-            <p>&nbsp;</p>
-            <p><strong><img src="https://upcampo.com.br/views/img/upCampo_logo_cortado.png" alt="upCampoLogo" width="220" height="244" /></strong></p>
-            
-
-            <div class="line"></div>
-            <h2 id="estrutura_cadastro">Entendendo a estrutura de cadastros</h2>
-            <p>Empresa &gt; Fazendas (Filiais). Cada empresa pode ter varias fazendas (filiais). Alguns cadastros s&atilde;o compartilhados entre filiais da mesma empresa, um exemplo &eacute; o cadastro de pragas e safra. J&aacute; outros, s&atilde;o espec&iacute;ficos para cada filial, que &eacute; o caso dos Talh&otilde;es.</p>
-            <p>Um detalhamento de cada cadastro "Por empresa" e "Por filial".</p>
-            <p>Por empresa:</p>
-            <ul>
-               <li><strong>Todos do menu "B&aacute;sico"</strong>: Cultura, Variedade, Praga Safra, Grupo de armadilha, etc.</li>
-               <li><strong>Menu "Lavoura"</strong>: Safra.</li>
-               <li><strong>Menu "Estoque"</strong>: Classe de produto, Produto, Entidade e configura&ccedil;&atilde;o de rateio.</li>
-               <li><strong>Menu "Operacional"</strong>: Bico, Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
-            </ul>
-            <p>Por filial:</p>
-            <ul>
-               <li><strong>Menu "Lavoura"</strong>: Talh&otilde;es, Plantio safra, Armadilha Safra, Pluviometro, Coleta de fardo, Rastreamento de fardo, Romaneio de colheita, Contrato de venda, Romaneio de Sa&iacute;da.Variedade, Praga Safra, Grupo de armadilha, etc.</li>
-               <li><strong>Menu "Estoque"</strong>: Local de estoque, Local de descarga, Pedido, Transferencia entre locais, Emprestimo produto, Movimentacao e Contrato de tercerizados.</li>
-               <li><strong>Menu "Operacional"</strong>: Equipe, frota, saida para frota, abastecimento, ordem de servi&ccedil;o.</li>
-            </ul>
-            
-
-            <div class="line"></div>
-            <h2 id="criando_empresa">Criando a empresas e fazendas</h2>
-            <p>Partindo do ponto que voc&ecirc; j&aacute; possua um cadastro na nossa plataforma &eacute; a hora de criar Empresas e Fazendas.</p>
-            <p><strong>Dica importante:</strong>&nbsp;caso sejam mais de uma fazenda para a mesma empresa, mas que sejam pequenas ou compartilhem todas m&aacute;quinas, produto e estoque, crie apenas uma Empresa e Fazenda.</p>
-            <p>Depois, nos cadastros de talh&atilde;o voc&ecirc; pode usar o campo Setor para idenficicar talh&atilde;o de cada fazenda.</p>
-            <p><strong>Empresa</strong></p>
-            <p>No menu "Arquivo" h&aacute; o item Empresa, ao acessar aparecer&aacute; a lista. H&aacute; um bot&atilde;o em azul chamado "Novo", pressione nele e preencha os campos e salve.</p>
-            <p>Fa&ccedil;a isso para todas as empresas que possuir.</p>
-            <p><strong>Fazenda/filial</strong></p>
-            <p>Depois, v&aacute; para o item Fazenda do mesmo menu "Arquivo".</p>
-            <p>Fa&ccedil;a a mesma coisa, pressione o bot&atilde;o "Novo", preencha os dados e salve. Fique atento no primeiro campo: "Empresa". &Eacute; isso que define de qual empresa essa fazenda/filial faz parte.</p>
-            <p><strong>Usu&aacute;rios</strong></p>
-            <p>Depois, v&aacute; para o menu Arquivo &gt; Usu&aacute;rios. Nessa tela ser&aacute; listada todas as empresas e suas filiais. Selecione a empresa, e a fazenda (ir&aacute; aparecer do lado da tabela de empresa).</p>
-            <p>Na sequ&ecirc;quencia ir&aacute; aparecer no meio da tela (abaixo da tabela de Empresa e Fazenda) uma lista de usu&aacute;rios cadastrados dessa fazenda. Voce pode criar novos usu&aacute;rios, alterar senha, etc.</p>
-            <p>Ao selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "menus" do sistema, para que voc&ecirc; defina permiss&atilde;o: Pode visualizar, inserir, editar ou excluir. Para definir, basta clicar em cima.</p>
-            <p><strong>Dica</strong>: Existe um bot&atilde;o azul para liberar acesso total e tamb&eacute;m aplicar perfil de t&eacute;cnico.</p>
-            <p><strong>Finaliza&ccedil;&atilde;o</strong></p>
-            <p>Agora est&aacute; pronto para fazer outros cadastros necess&aacute;rios, como talh&atilde;o, safra, etc. Para isso, v&aacute; no menu "Sair" (o &uacute;ltimo) e logue novamente, selecionando a Empresa e Fazenda criada.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="criando_usuario">Criando usuários e permissões</h2>
-            <p><strong>Os usu&aacute;rios podem ter acesso a uma ou mais fazendas.</strong></p>
-            <p>A tela fica no menu Arquivo &gt; Usu&aacute;rio.</p>
-            <p>Nessa tela ser&aacute; listada todas as empresas e suas filiais. Selecione a empresa, e a fazenda (ir&aacute; aparecer do lado da tabela de empresa).</p>
-            <p>Na sequ&ecirc;quencia ir&aacute; aparecer no meio da tela (abaixo da tabela de Empresa e Fazenda) uma lista de usu&aacute;rios cadastrados dessa fazenda.</p>
-            <p>Voc&ecirc; pode criar novos usu&aacute;rios, alterar senha, etc.<br /><br /><br /><strong>Para criar um novo</strong>: pressione o bot&atilde;o que fica na tabela do meio "Novo usu&aacute;rio".</p>
-            <p><strong><em>Observa&ccedil;&otilde;es</em></strong>: O login ser&aacute; feito atrav&eacute;s do campo E-mail&nbsp;<strong>OU</strong>&nbsp;login. Geralmente as pessoas criam os logins com o&nbsp;<strong>"Nome.Empresa"</strong>, exemplo: jonas.upcampo.<br /><br /><br /><strong>Para alterar um usu&aacute;rio</strong>: selecione o usu&aacute;rio em quest&atilde;o e v&aacute; no bot&atilde;o "Detalhar dados do usu&aacute;rio".<br /><br /><br /><strong>Para excluir um usu&aacute;rio da fazenda</strong>: selecione o usu&aacute;rio em quest&atilde;o e v&aacute; no bot&atilde;o "Excluir usu&aacute;rio da fazenda".<br /><br /><br /><strong>Incluir um usu&aacute;rio Existente</strong>: esta op&ccedil;&atilde;o serve para incluir um usu&aacute;rio que j&aacute; existe na plataforma upCampo, em outra fazenda. Ap&oacute;s selecionar o bot&atilde;o, escolha o usu&aacute;rio na lista.<br /><br /><br /></p>
-            <p><strong>Controle de acesso</strong></p>
-            <p>Ao selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "menus" do sistema, para que voc&ecirc; defina permiss&atilde;o: Pode definir se ele pode visualizar, inserir, editar ou excluir. Para definir, basta clicar em cima.</p>
-            <p><strong>Dica:</strong>&nbsp;Existe um bot&atilde;o azul para liberar acesso total e tamb&eacute;m aplicar perfil de t&eacute;cnico.</p>
-            <p><strong>Relat&oacute;rios</strong></p>
-            <p>Na guia Relat&oacute;rios, ap&oacute;s selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "relat&oacute;rios" do sistema, para que voc&ecirc; definir o que ele poder&aacute; ver.</p>
-            <p><strong>Configura&ccedil;&otilde;es gerais</strong></p>
-            <p>Nesta guia h&aacute; op&ccedil;&otilde;es relativa a prefer&ecirc;ncias como "Tela inicial" e abastecimento entre outros.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="criando_estrutura_basica">Criando a estrutura básica (lavoura)</h2>
-            <p>A estrutura b&aacute;sica compreende no que &eacute; necess&aacute;rio para fazer levantamentos e ordens.</p>
-            <p>&Eacute; principalmente os talh&otilde;es e o que foi plantado em cada talh&atilde;o em determinada safra.</p>
-            <p>Ent&atilde;o a ordem de cadastros seria:</p>
-            <ol>
-               <li>
-                  <p><strong>Talh&atilde;o</strong>&nbsp;- no menu Lavoura &gt; Talh&atilde;o. Talh&atilde;o normalmente n&atilde;o sofre altera&ccedil;&otilde;es em cada safra.</p>
-               </li>
-               <li>
-                  <p><strong>Variedade</strong>&nbsp;- no menu B&aacute;sico &gt; Variedade.</p>
-               </li>
-               <li>
-                  <p><strong>Safra</strong>&nbsp;- no menu Lavoura &gt; Safra.</p>
-               </li>
-               <li>
-                  <p><strong>Plantio safra</strong>&nbsp;- no menu Lavoura &gt; Safra. &Eacute; aqui onde &eacute; relacionado o Talh&atilde;o com sua Cultura e suas variedades.</p>
-               </li>
-            </ol>
-            <p>Opcionalmente h&aacute; tamb&eacute;m:</p>
-            <ol start="4">
-               <li>
-                  <p><strong>Pluvi&ocirc;metro</strong>&nbsp;- no menu Lavoura &gt; Pluvi&ocirc;metro.</p>
-               </li>
-               <li>
-                  <p><strong>Grupo de armadilha</strong>&nbsp;- no menu B&aacute;sico &gt; Grupo de Armadilha. &Eacute; um agrupamento de armadilhas, por exemplo "Armadilha para bicudo".</p>
-               </li>
-               <li>
-                  <p><strong>Armadilhas da safra</strong>&nbsp;- no menu Lavoura &gt; Armadilha Safra.</p>
-               </li>
-            </ol>
-            <p>Nos documentos a seguir h&aacute; um detalhamento de cada item destes.</p>
-           
-
-            <div class="line"></div>
-            <h2 id="talhao">Talhão</h2>
-            <p>Os talh&otilde;es s&atilde;o as separa&ccedil;&otilde;es das &aacute;reas da fazenda, as "parcelas" ou "campos".&nbsp;<strong>Aten&ccedil;&atilde;o</strong>: s&oacute; aparece estes talh&otilde;es no aplicativo ap&oacute;s a defini&ccedil;&atilde;o de "Plantio da Safra" com este Talh&atilde;o, ou seja, primeiro crie os talh&otilde;es e depois defina o que vai plantar na tela Plantio da Safra.</p>
-            <p>Est&aacute; no menu Lavoura &gt; Talh&atilde;o.</p>
-            <p><strong>Inserir um de cada vez</strong>: atrav&eacute;s do bot&atilde;o "Novo".</p>
-            <p>Os campos:</p>
-            <ol>
-               <li>
-                  <p>C&oacute;digo - num&eacute;rico, serve para facilitar a ordena&ccedil;&atilde;o em relat&oacute;rios.</p>
-               </li>
-               <li>
-                  <p>Descri&ccedil;&atilde;o - &eacute; o nome do talh&atilde;o, a maneira como voc&ecirc; identifica-o.</p>
-               </li>
-               <li>
-                  <p>Setor - serve para agrupar talh&otilde;es. Um bom exemplo &eacute; fazendas grandes onde &eacute; separado por Setor Sul, Norte, Oeste, etc. Tamb&eacute;m &eacute; usado para separar fazendas, quando os cadastros s&atilde;o compartilhados (produtos, frota, estoque, etc).</p>
-               </li>
-               <li>
-                  <p>Area - hectares total do talh&atilde;o. N&atilde;o confuda com hectares plantada em determinada safra.</p>
-               </li>
-               <li>
-                  <p>Ativo - quando ativo ele aparece nas op&ccedil;&otilde;es do Plantio Safra. Serve para desativar e n&atilde;o perder hist&oacute;rico de lan&ccedil;amentos.</p>
-               </li>
-               <li>
-                  <p>ID armaz. nuvem - &eacute; um n&uacute;mero interno que usamos para fazer a conex&atilde;o com o armazenamento em nuvem. Nunca deve ser alterado sem ajuda da equipe da upCampo.</p>
-               </li>
-            </ol>
-            <p><strong>Importar de um arquivo excel</strong>: no bot&atilde;o "Importar de excel". Para isso formate o excel com as colunas acima. &Eacute; importante sempre deletar todas as linhas que n&atilde;o houverem dados. Baixe aqui um exemplo de arquivo.</p>
-            <p><br /><br /></p>
-            <p><strong>Coordenadas</strong></p>
-            <p>Nesta guia &eacute; poss&iacute;vel importar um arquivo com as coordenadas do talh&atilde;o, ou seja, os limites dele. Os formatos poss&iacute;veis por enquanto s&atilde;o "shapefile" e "kmz - Google Earth". Para isso basta ir no bot&atilde;o "Importar arquivo", escolher o arquivo no seu computador e aguardar o mapa ser gerado. Se aparecer o desenho do mapa do talh&atilde;o, confirme para salvar.</p>
-            <p>Ou &eacute; poss&iacute;vel desenhar manualmente pressionando o bot&atilde;o "Desenhar manualmente". Nesta op&ccedil;&atilde;o voc&ecirc; vai selecionando no mapa os pontos para formar os limites do talh&atilde;o.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="safra">Safra</h2>
-            <p>Este cadastro &eacute; bastante simples. Preencha a descri&ccedil;&atilde;o, por exemplo: Safra 2022/2023.</p>
-            <p>Esta safra ser&aacute; relacionada nos Plantio da Safra em muitos outros itens do sistema (Ordem de servi&ccedil;o, Movimenta&ccedil;&atilde;o de notas, Contrato de venda, etc).</p>
-            <p>H&aacute; algumas guias (<strong>avan&ccedil;adas</strong>, no in&iacute;cio de sua jornada provalvelmente n&atilde;o usar&aacute; isso) para Par&acirc;metros de Colheita e outra guia para Arquivos. Veja os detalhes de cada:</p>
-            <p><br /><br /><br /><strong>Parametro de colheita</strong></p>
-            <p>&Eacute; aqui que &eacute; definido os Param&ecirc;tros para a colheita de cada cultura da fazenda. Por exemplo, se vai haver descontos de Umidade, Impureza, etc voc&ecirc; define aqui quais ser&atilde;o. Veja mais detalhes no t&oacute;pico "Configurando a colheita de gr&atilde;os".</p>
-            <p>O&nbsp;<strong>produto</strong>&nbsp;que ser&aacute; o&nbsp;<strong>resultado da colheita</strong>&nbsp;tamb&eacute;m &eacute; definido aqui, &eacute; este produto que entrar&aacute; para o&nbsp;<strong>estoque</strong>. Exemplo: cultura "soja", desconto "padr&atilde;o xx", entrar&aacute; para estoque como o Produto "Soja 001". Ent&atilde;o ao realizar "romaneios de colheita" ser&aacute; aplicado os descontos "padr&atilde;o xx" e o peso l&iacute;quido (sem os descontos) entrar&aacute; no estoque do armaz&eacute;m selecionado no romaneio.</p>
-            <p><br /><br /><strong>Arquivos</strong></p>
-            <p>Nesta guia &eacute; exibido os arquivos que foram adicionados na pasta do Google Drive da safra. Voc&ecirc; pode adicionar arquivos diversos no Google Drive, como um arquivo Excel, PDF, imagens, etc. Nesta guia &eacute; poss&iacute;vel classificar o arquivo, definir uma data e um t&iacute;tulo para este arquivo, que facilita a busca depois.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="plantio_safra">Plantio da Safra</h2>
-           
-           <p>Uma dos principais cadastros, pois tudo come&ccedil;a com um Plantio.&nbsp;<strong>Somente depois deste cadastro &eacute; que o talh&atilde;o aparece no aplicativo</strong>.</p>
-            <p>Ent&atilde;o nesta tela associamos o&nbsp;<strong>Talh&atilde;o</strong>&nbsp;e a&nbsp;<strong>Cultura</strong>&nbsp;que est&aacute; na&nbsp;<strong>Safra</strong>&nbsp;que voc&ecirc; est&aacute; logada. Tamb&eacute;m deve-se colocar a &aacute;rea total (em hectares). Sobre a &aacute;rea, ela pode ser menor que a area total do talh&atilde;o, mas nunca maior.</p>
-            <p>Logo no in&iacute;cio h&aacute; um campo chamado "Cor", isso serve para mostrar no gr&aacute;fico de D.A.E presente na Dashboard. Como local preferencial, ser&aacute; buscado a cor aqui no Plantio Safra e quando n&atilde;o encontrado &eacute; buscado nas Variedades.</p>
-            <p>Dependendo do tipo da cultura (Perene ou Anual) ir&aacute; aparecer campos relativo a cultura, como "Plantas por hectare" ou "Dist&acirc;ncia entre ruas".</p>
-            <p><strong>Variedade</strong></p>
-            <p>Logo abaixo no cadastro h&aacute; um quadro de cor de diferente para a variedade e uma op&ccedil;&atilde;o: "<strong>Uma variedade</strong>" ou "<strong>Mais de uma variedade</strong>". Quando selecionado "uma variedade" &eacute; mais simples, basta preenchar a variedade desejada.</p>
-            <p>J&aacute; quando &eacute; "mais de uma", aparece op&ccedil;&otilde;es para ir adicionado muitas variedades. Lembrando que a &aacute;rea total das variedades n&atilde;o podem ser maiores que a &aacute;rea do talh&atilde;o. Observa&ccedil;&atilde;o: um campo nas op&ccedil;&otilde;es de "mais de uma variedade" &eacute; chamado de "Nome de exibi&ccedil;&atilde;o" serve para renomear esta variedade nas opera&ccedil;&otilde;es seguintes do sistema (ordens, aplicativo), isso se justifica quando o nome da Variedade &eacute; muito complexo, por exemplo em campos de experimento.</p>
-            <p><strong>Op&ccedil;&otilde;es de separar por variedade</strong></p>
-            <p>Quando &eacute; selecionado a op&ccedil;&atilde;o "Mais de uma variedade" aparece esta op&ccedil;&atilde;o para definir se vai&nbsp;<strong>separar por variedade</strong>&nbsp;em "Levantamentos, Colheita, Plantio, etc".</p>
-            <p>Basicamente quando marcado significa que todos os lan&ccedil;amentos deste Talh&atilde;o + Variedade ser&aacute; separado no item em quest&atilde;o.</p>
-            <p>Vamos ao exemplo: Um talh&atilde;o chamado "TH 01" possui as variedades "98YRR" e "99YRR". Ao marcar a op&ccedil;&atilde;o "Separar em levantamentos" aparecer&aacute; no aplicativo 2 itens dispon&iacute;veis para fazer levantamentos ("TH 01 - 98YRR" e "TH 01 - 99YRR"), ou seja, os monitores ter&atilde;o que fazer levantamento para cada uma e cada variedade ter&aacute; seus resultados&nbsp;<strong>separados</strong>.</p>
-
-
-            <div class="line"></div>
-            <h2 id="armadilha_safra">Armadilhas x Safra</h2>
-            <p>S&atilde;o o cadastro de cada armadilha da sua fazenda.</p>
-            <p>No campo "Grupo de armadilha" &eacute; a refer&ecirc;ncia a outro cadastro, para agrupar armadilhas por semelhan&ccedil;a. Por exemplo, "Armadilha para bicudo", "Armadilha para lagartas".</p>
-            <p>Ent&atilde;o cadastre aqui cada armadilha que voc&ecirc; possuir, com sua localiza&ccedil;&atilde;o. Isso possibilitar&aacute; que no aplicativo, na tela de Armadilhas, o usu&aacute;rio colete periodicamente quantas pragas encontrou.<em>texto em it&aacute;lico</em></p>
-            
-
-            <div class="line"></div>
-            <h2 id="pluviometro">Pluviomêtros & estações metereológicas</h2>
-            <p>Neste cadastro voc&ecirc; cria todos os seus pluvi&ocirc;metro ou esta&ccedil;&atilde;o metereol&oacute;gica.</p>
-            <p><strong>Pra qu&ecirc;/por que?</strong>&nbsp;Para que voc&ecirc; grave todo o hist&oacute;rico de dados metereol&oacute;gicos da sua fazenda e possa comparar, avaliar e tomar decis&otilde;es baseado neste hist&oacute;rico. Possu&iacute;mos relat&oacute;rios e uma dashboard para visualizar estes dados.</p>
-            <p><strong>Como?</strong></p>
-            <p>No campo descri&ccedil;&atilde;o coloque um nome, uma refer&ecirc;ncia para identificar o pluvi&ocirc;metro/esta&ccedil;&atilde;o. Um exemplo seria: TH 01 e TH 02.</p>
-            <p>O campo link API serve para que o sistema busque automaticamente dados da esta&ccedil;&atilde;o e importe na upCampo. Para mais detalhes desta integra&ccedil;&atilde;o, converse com nossa equipe!</p>
-            <p>Abaixo h&aacute; guias para Talh&atilde;o, Localiza&ccedil;&atilde;o e Coletas. Vamos ver cada uma delas:</p>
-            <p><strong>Talh&atilde;o</strong></p>
-            <p>Aqui voc&ecirc; insere os talh&otilde;es que este pluvi&ocirc;metro/esta&ccedil;&atilde;o que se refere. Por exemplo, se voc&ecirc; possui um pluviometro que est&aacute; no cruzamento de 4 talh&otilde;es, adicione os 4 aqui.</p>
-            <p>Isso far&aacute; com que o sistema entenda quais dados de chuva recuperar em relat&oacute;rios, dashboard pra cada talh&atilde;o.</p>
-            <p><strong>Localiza&ccedil;&atilde;o</strong></p>
-            <p>&Eacute; a localiza&ccedil;&atilde;o geogr&aacute;fica do pluvi&ocirc;metro/esta&ccedil;&atilde;o, latitude e longitude. Com isso conseguimos gerar mapas com cada pluvi&ocirc;metro/esta&ccedil;&atilde;o. A localiza&ccedil;&atilde;o pode ser configurada pelo Aplicativo, que captura automaticamente pelo GPS do dispositivo.</p>
-            <p><strong>Coleta</strong></p>
-            <p>Aqui &eacute; exibido as coletas desse pluvi&ocirc;metro/esta&ccedil;&atilde;o. As coletas normalmente s&atilde;o realizadas com o Aplicativo, direto do campo.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="levantamentos">Levantamentos</h2>
-            <p>S&atilde;o os levantamentos MIP que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
-            <p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
-            <p>Para visualizar os levantamentos "prontos", acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="observacoes">Observações</h2>
-            <p>S&atilde;o as observa&ccedil;&otilde;es que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
-            <p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
-            <p>Para visualizar junto com os levantamentos, acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="Análises">Análises</h2>
-            <p>Aqui s&atilde;o as An&aacute;lises e Coletas realizadas da fazenda. De forma "bruta", pois est&atilde;o os dados em formato de listagem/banco de dados.</p>
-            <p>Ainda em desenvolvimento, em breve haver&aacute; op&ccedil;&otilde;es para coletar amostras pelo Aplicativo e os dados "trabalhados" e "mapas" com resultados dessas an&aacute;lises coletadas.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="coletas_fardos">Coletas de fardos</h2>
-            <p>Se refere a coletas de fardos de algod&atilde;o.</p>
-            <p>&Eacute; preciso re-lembrar a rotina na pr&aacute;tica: a colheitadeira recupera o algod&atilde;o das plantas e gera um fardo. Este fardo fica no campo e depois &eacute; coletado. Esta tela &eacute; relativo a esta coleta.</p>
-            <p>Nosso aplicativo possui uma tela espec&iacute;fica para criar os fardos, onde o usu&aacute;rio vai registrando cada fardo direto do campo.</p>
-            <p>E tamb&eacute;m h&aacute; no aplicativo tela espec&iacute;fica para coleta.</p>
-            <p>Normalmente ap&oacute;s a coleta no campo &eacute; pesado na sede da fazenda e posteriomente beneficiado na algodoeira. Esta tela &eacute; onde &eacute; registrado estes pesos e beneficiamento.</p>
-            
-
-            <div class="line"></div>
-            <h2 id="dashboard_levantamento">Dashboard Levantamentos MIP</h2>
-            <p>Mostramos todas as informa&ccedil;&otilde;es coletadas no campo referente a Levantamentos. Hist&oacute;rico, mapas, gr&aacute;ficos, tudo para auxiliar a tomada de decis&atilde;o.</p>
-            <p>&Eacute; a tela onde o tomador de decis&atilde;o referente a aplica&ccedil;&atilde;o de defensivos mais usa, por estar tudo centralizado.</p>
-            <div class="line"></div>
-            <h2 id="dashboard_armadilha">Dashboard Armadilhas</h2>
-            <p>Centraliza as coletas de armadilhas e mostra no mapa a situa&ccedil;&atilde;o de cada armadilha.</p>
-            <div class="line"></div>
-            <h2 id="dashboard_pluviometro">Dashboard Pluviômetros</h2>
-            <p>As coletas de dados metereol&oacute;gicos s&atilde;o exibidas em formato de gr&aacute;fico e futuramente em mapa.</p>
-            <p>&Eacute; poss&iacute;vel filtrar per&iacute;odos e comparar entre pluvi&ocirc;metros.</p>
-            <div class="line"></div>
-            <h2 id="configurando_colheita">Configurando a colheita de grãos</h2>
-            <p>Para a colheita de gr&atilde;os, que precisam de romaneios &eacute; necess&aacute;rio configurar alguns param&ecirc;tros. Ou seja, definir se vai haver descontos e qual tabela usar. Siga os passos:</p>
-            <ol>
-               <li>
-                  <p>Verifique quais descontos (Umidade, Impureza, Avariado, Ardido, Quebrado ou Armazenagem) dos romaneios de colheita ser&atilde;o usado para a safra;</p>
-               </li>
-               <li>
-                  <p>No menu "B&aacute;sico &gt; Desconto padr&atilde;o/Colheita gr&atilde;os" &eacute; onde voc&ecirc; deve criar este descontos.</p>
-               </li>
-               <li>
-                  <p>No menu "Lavoura &gt; Safra" selecione a safra em quest&atilde;o e na guia "Param&ecirc;tros de colheita".</p>
-               </li>
-               <li>
-                  <p>Defina a "Cultura" e o "Produto" que entrar&aacute; no estoque.</p>
-               </li>
-               <li>
-                  <p>Defina quais ser&atilde;o as tabelas de "Descontos" de cada item (Umidade, Avariado, etc). N&atilde;o &eacute; obrigat&oacute;rio ter descontos, para n&atilde;o usar basta deixar em branco.</p>
-               </li>
-               <li>
-                  <p>Ap&oacute;s os passos acima, o Romaneio de Colheita est&aacute; pronto. V&aacute; ao menu "Lavoura &gt; Romaneio de Colheita" e fa&ccedil;a um lan&ccedil;amento. Fique atento aos desconto, se houverem, lan&ccedil;e alguns descontos aleat&oacute;rios e verifique se est&aacute; puxando conforme necessidade. Verifique tamb&eacute;m o saldo do produto antes e depois dos lan&ccedil;amentos.</p>
-               </li>
-               <li>
-                  <p>Gere uma impress&atilde;o, pelo bot&atilde;o "relat&oacute;rio" a partir da tela de Romaneio (ao lado do bot&atilde;o salvar).</p>
-               </li>
-               <li>
-                  <p>Pronto! Boa colheita =)</p>
-               </li>
-            </ol>
-
-            <div class="line"></div>
-            <h2 id="entendendo_estoque">Entendendo o estoque</h2>
-
-
-            <p>A gest&atilde;o do estoque &eacute; muito importante para qualquer organiza&ccedil;&atilde;o, por isso, sempre que poss&iacute;vel utilize-a.</p>
-            <p>Na upCampo tentamos focar na parte objetiva, sem burocracia. Por isso, se houver sugest&atilde;o de simplifica&ccedil;&atilde;o estamos sempre abertos.</p>
-            <p>Para a gest&atilde;o de estoque &eacute; preciso de<strong> 3&nbsp;itens b&aacute;sicos</strong>:</p>
-            <ul>
-            <li><strong>Classe de produto</strong>: n&atilde;o &eacute; obrigat&oacute;rio, mas &eacute; muito recomendado pois facilita nos relat&oacute;rios e na vis&atilde;o "macro". Exemplos: "Fungicida", "Herbicidas", "Inseticida", "Pe&ccedil;as", etc;</li>
-            <li><strong>Produto</strong>: o produto em s&iacute;;</li>
-            <li><strong>Local de estoque</strong>: onde &eacute; armazenado o produto.</li>
-            </ul>
-            <p>A partir destes cadastros acima, est&aacute; pronto para come&ccedil;ar as movimenta&ccedil;&otilde;es.</p>
-            <p>Podem ser movimentado o estoque pelas telas:</p>
-            <ul>
-            <li>Movimenta&ccedil;&atilde;o</li>
-            <li>Ordem de servi&ccedil;o</li>
-            <li>Transfer&ecirc;ncia entre locais</li>
-            <li>Empr&eacute;stimo de produtos</li>
-            <li>Romaneio de colheita</li>
-            <li>Romaneio de sa&iacute;da</li>
-            <li>Abastecimento</li>
-            <li>Sa&iacute;da para frota</li>
-            </ul>
-            <p>A <strong>entrada para o estoque</strong>&nbsp;&eacute; feita, <strong>principalmente</strong>, pela tela de "Movimenta&ccedil;&atilde;o". Nesta tela h&aacute; op&ccedil;&atilde;o de "Entrada com nota fiscal" e "Avulsa".</p>
-            <p>Al&eacute;m da movimenta&ccedil;&atilde;o, um produto pode <em><strong>entrar/ser adicionado&nbsp;</strong></em>via "Romaneio de Colheita" e "Transfer&ecirc;ncia" e "Empr&eacute;stimo".</p>
-            <p>J&aacute; a <strong>sa&iacute;da do estoque</strong>, na maioria das vezes &eacute; realizada pelas "Ordens de servi&ccedil;o", "Abastecimento" e "Romaneio de sa&iacute;da".</p>
-            <p>Al&eacute;m destas telas, na "Transfer&ecirc;ncia", "Movimenta&ccedil;&atilde;o", "Emprestimo" e "Sa&iacute;da para frota" tamb&eacute;m &eacute; poss&iacute;vel realizar sa&iacute;das.</p>
-            <p><strong>Todas as telas</strong> com refer&ecirc;ncia com estoque h&aacute; um bot&atilde;o chamado "<span style="color: #ff0000;"><strong>Ver estoque</strong></span>" ao lado dos outros (novo, excluir, etc). Neste bot&atilde;o rapidamente &eacute; mostrado todos os itens e seus saldos. Ao clicar em cima de qualquer um, o sistema mostra toda a moviemnta&ccedil;&atilde;o dele naquele local de estoque.</p>
-
-
-            <div class="line"></div>
-            <h2 id="classe_produto">Classe de produto</h2>
-            <p>Cada produto pode ter uma classe. Isso &eacute; muito &uacute;til para agrupar produtos parecidos.</p>
-            <p>Com esta organiza&ccedil;&atilde;o de Classes fica bastante f&aacute;cil obter informa&ccedil;&otilde;es como: "Qual classe de produtos eu tenho consumido mais", ou, "Gasto mais com herbicidas, fungicidas, ou qual classe?".</p>
-            <p>O cadastro &eacute; b&aacute;sico, c&oacute;digo e descri&ccedil;&atilde;o.</p>
-            
-            <div class="line"></div>
-            <h2 id="produto">Produto</h2>
-
-            <p>Cadastro muito importante para toda sequ&ecirc;ncia de controles de estoque e custos.</p>
-            <p>Os campos obrigat&oacute;rios s&atilde;o a "descri&ccedil;&atilde;o" e "unidade". Todos os outros s&atilde;o opcionais, preencha sempre que poss&iacute;vel.</p>
-            <p><strong>Sobre unidade, </strong>&eacute; importante escolher a unidade que normalmente &eacute; a sa&iacute;da do estoque, pois &eacute; dessa forma que voc&ecirc; vai mais usar.</p>
-            <p><span style="color: #ff0000;"><strong>Importa&ccedil;&atilde;o de excel</strong></span></p>
-            <p>Sabemos que &eacute; utilizado muitos produtos durante uma safra e possivelmente j&aacute; h&aacute; algum tipo de controle. Esta op&ccedil;&atilde;o existe para importar a partir de um arquivo excel.</p>
-            <p>Quando clicar nesta op&ccedil;&atilde;o (que fica ali do lado direito do bot&atilde;o "novo"), aparece uma janela com a instru&ccedil;&atilde;o do formato do arquivo excel. Mais abaixo um bot&atilde;o chamado "Importar excel" que &eacute; o qual voc&ecirc; seleciona o arquivo excel.</p>
-            <p><strong>Importante</strong>: exclua todas as linhas sem conte&uacute;do que normalmente fica no final do arquivo, ou seja, deixei apenas as linhas com conte&uacute;do.</p>
-            <p><strong>Princ&iacute;pio ativo</strong></p>
-            <p>H&aacute; uma guia chamada "Princ&iacute;pio ativo", para voc&ecirc; relacionar um ou mais princ&iacute;pios ativos. Isto &eacute; bastante importante para produtos qu&iacute;micos (fdefensivos, etc), pois na hora da cria&ccedil;&atilde;o da recomenda&ccedil;&atilde;o/ordem de servi&ccedil;o &eacute; poss&iacute;vel pesquisar pelo princ&iacute;pio.</p>
-            <p>Como sabemos que normalmente h&aacute; v&aacute;rios princ&iacute;pios para um produto, existe um bot&atilde;o chamado "<strong>Importa&ccedil;&atilde;o r&aacute;pido/din&acirc;mico</strong>". Nessa op&ccedil;&atilde;o &eacute; poss&iacute;vel selecionar v&aacute;rios para adicionar de uma vez (&eacute; bem mais r&aacute;pido).</p>
-            <p>O cadastro do princ&iacute;pio em si &eacute; mantido por n&oacute;s da upCampo, caso falte algum contate imediatamente pelo whatsapp que n&oacute;s adicionamos pra voc&ecirc;. Ou seja, voc&ecirc; s&oacute; relaciona quais princ&iacute;pios s&atilde;o do produto, o resto deixa com a gente.</p>
-                     
-
-             <div class="line"></div>
-             <h2 id="local_estoque">Local de estoque</h2>
-
-            <p>&Eacute; o lugar onde &eacute; "guardado", "armazenado" os produtos. Tamb&eacute;m &eacute; chamado de Almoxarifado, Barrac&atilde;o, Armaz&eacute;m, Silo entre outros.</p>
-            <p>Por exemplo, em uma fazenda normalmente h&aacute; os locais: "Barrac&atilde;o de defensivos", "Barrac&atilde;o de sementes", "Barrac&atilde;o de Adubos", "Silo geral", "Posto de combust&iacute;vel".</p>
-            <p>O campo "Nome/descri&ccedil;&atilde;o &eacute; obrigat&oacute;rio.</p>
-            <p>Ainda h&aacute; v&aacute;rias op&ccedil;&otilde;es, que &eacute; importante saber o que significa cada:</p>
-            <ul>
-            <li>Ativo - caso um local n&atilde;o exista mais ele precisa ser desativado e nunca exclu&iacute;do, para preservar o hist&oacute;rico de movimenta&ccedil;&otilde;es relacionadas;</li>
-            <li>Controlar saldo - quando marcado n&atilde;o ser&aacute; permitido que o saldo fique menor que zero, ou seja, opera&ccedil;&otilde;es ser&atilde;o abortadas caso n&atilde;o haja saldo suficiente;<br /><br /></li>
-            <li>Exibir na movimenta&ccedil;&atilde;o - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Movimenta&ccedil;&otilde;es (entrada de NF);<br /><br /></li>
-            <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Empr&eacute;stimo de produtos;<br /><br /></li>
-            <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Transfer&ecirc;ncia;<br /><br /></li>
-            <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Ordem de servi&ccedil;o;<br /><br /></li>
-            <li>Pr&oacute;pio - para sinalizar que &eacute; um local seu, que voc&ecirc; tem total controle (n&atilde;o de terceiros, em terceiros);</li>
-            <li>Abastecimento - sinaliza que &eacute; um "posto", isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a combust&iacute;veis;<br />Quando esta op&ccedil;&atilde;o abastecimento est&aacute; selecionada &eacute; exibida dois novos campos:
-            <ul>
+<p>&nbsp;</p>
+<!-- Bootstrap CSS CDN -->
+<p></p>
+<!-- Our Custom CSS -->
+<p></p>
+<!-- Font Awesome JS -->
+<div class="wrapper"><!-- Sidebar  --><nav id="sidebar">
+   <div class="sidebar-header">
+      <h3>Documenta&ccedil;&atilde;o upCampo</h3>
+   </div>
+   <ul class="list-unstyled components">
+      <li class="active"><a class="dropdown-toggle" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">B&aacute;sico</a>
+         <ul id="homeSubmenu" class="collapse list-unstyled">
+            <li><a href="#estrutura_cadastro">Entendendo a estrutura de cadastros</a></li>
+            <li><a href="#criando_empresa">Criando a empresas e fazendas</a></li>
+            <li><a href="#criando_usuario">Criando usu&aacute;rios e permiss&otilde;es</a></li>
+            <li><a href="#criando_estrutura_basica">Criando a estrutura b&aacute;sica (lavoura)</a></li>
+         </ul>
+      </li>
+      <li><a class="dropdown-toggle" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Lavoura</a>
+         <ul id="pageSubmenu" class="collapse list-unstyled">
+            <li><a href="#talhao">Talh&atilde;o</a></li>
+            <li><a href="#safra">Safra</a></li>
+            <li><a href="#plantio_safra">Plantio da safra</a></li>
+            <li><a href="#armadilha_safra">Armadilhas x Safra</a></li>
+            <li><a href="#pluviometro">Pluviom&ecirc;tros &amp; esta&ccedil;&otilde;es metereol&oacute;gicas</a></li>
+            <li><a href="#levantamentos">Levantamentos</a></li>
+            <li><a href="#observacoes">Observa&ccedil;&otilde;es</a></li>
+            <li><a href="#analises">An&aacute;lises</a></li>
+            <li><a href="#coletas_fardos">Coletas de fardos</a></li>
+            <li><a href="#dashboard_levantamento">Dashboard Levantamentos MIP</a></li>
+            <li><a href="#dashboard_armadilha">Dashboard Armadilhas</a></li>
+            <li><a href="#dashboard_pluviometro">Dashboard Pluvi&ocirc;metros</a></li>
+            <li><a href="#configurando_colheita">Configurando a colheita de gr&atilde;os</a></li>
+            <li><a href="#classe_produto">Classe de produto</a></li>
+            <li><a href="#produto">Produto</a></li>
+         </ul>
+      </li>
+      <li><a class="dropdown-toggle" href="#pageOperacional" data-toggle="collapse" aria-expanded="false">Estoque</a>
+         <ul id="pageOperacional" class="collapse list-unstyled">
+            <li><a href="#entendendo_estoque">Entendendo o estoque</a></li>
+            <li><a href="#classe_produto">Classe de produto</a></li>
+            <li><a href="#produto">Produto</a></li>
+            <li><a href="#local_estoque">Local de estoque</a></li>
+            <li><a href="#local_descarga">Local de descarga</a></li>
+            <li><a href="#entidade">Entidade</a></li>
+         </ul>
+      </li>
+      <li><a class="dropdown-toggle" href="#pageNuvem" data-toggle="collapse" aria-expanded="false">Nuvem</a>
+         <ul id="pageNuvem" class="collapse list-unstyled">
+            <li><a href="#entendendo_nuvem">Entendendo a nuvem da upCampo</a></li>
+            <li><a href="#conta_gmail">Criando conta no Gmail</a></li>
+            <li><a href="#baixando_sincronizacao">Baixando programa para sincroniza&ccedil;&atilde;o offline</a></li>
+            <li><a href="#compartilhando_drive_equipe">Compartilhando entre a equipe</a></li>
+            <li><a href="acessando_nuvem_na_plataforma">Acessando a nuvem de dentro da upCampo</a></li>
+         </ul>
+      </li>
+   </ul>
+</nav><!-- Page Content  -->
+<div id="content">
+   <h2 id="inicio">Bem vindo a documenta&ccedil;&atilde;o upCampo!</h2>
+   <p>Do lado esquerdo desta p&aacute;gina esta os t&oacute;picos ou aqui abaixo, basta clicar em cima para visualizar!</p>
+   <p>Se precisar pesquisar pressione as teclas "<strong>Control + F</strong>" para pesquisar T&oacute;picos e Palavras.</p>
+   <p>Qualquer d&uacute;vida n&atilde;o deixe de nos contactar pelos nossos canais:</p>
+   <p>E-mail:&nbsp;<strong><a href="mailto:contato@upcampo.com.br" target="_blank" rel="nofollow noopener">contato@upcampo.com.br</a></strong></p>
+   <p>Whatsapp:&nbsp;<strong>67-9 8147 8550 (<a title="Link whatsapp" href="https://api.whatsapp.com/send?phone=+5567981478550&amp;text=Oi%20upCampo, preciso de ajuda!">clique aqui para abrir</a>)</strong></p>
+   <p>&nbsp;</p>
+   <p><strong><img src="https://static.wixstatic.com/media/482773_de401860dc434eeb82e7e363eb51cc55~mv2.png" alt="upCampoLogo" width="220" height="" /></strong></p>
+   <div class="line">&nbsp;</div>
+   <h2 id="estrutura_cadastro">Entendendo a estrutura de cadastros</h2>
+   <p>Empresa &gt; Fazendas (Filiais). Cada empresa pode ter varias fazendas (filiais). Alguns cadastros s&atilde;o compartilhados entre filiais da mesma empresa, um exemplo &eacute; o cadastro de pragas e safra. J&aacute; outros, s&atilde;o espec&iacute;ficos para cada filial, que &eacute; o caso dos Talh&otilde;es.</p>
+   <p>Um detalhamento de cada cadastro "Por empresa" e "Por filial".</p>
+   <p>Por empresa:</p>
+   <ul>
+      <li><strong>Todos do menu "B&aacute;sico"</strong>: Cultura, Variedade, Praga Safra, Grupo de armadilha, etc.</li>
+      <li><strong>Menu "Lavoura"</strong>: Safra.</li>
+      <li><strong>Menu "Estoque"</strong>: Classe de produto, Produto, Entidade e configura&ccedil;&atilde;o de rateio.</li>
+      <li><strong>Menu "Operacional"</strong>: Bico, Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
+   </ul>
+   <p>Por filial:</p>
+   <ul>
+      <li><strong>Menu "Lavoura"</strong>: Talh&otilde;es, Plantio safra, Armadilha Safra, Pluviometro, Coleta de fardo, Rastreamento de fardo, Romaneio de colheita, Contrato de venda, Romaneio de Sa&iacute;da.Variedade, Praga Safra, Grupo de armadilha, etc.</li>
+      <li><strong>Menu "Estoque"</strong>: Local de estoque, Local de descarga, Pedido, Transferencia entre locais, Emprestimo produto, Movimentacao e Contrato de tercerizados.</li>
+      <li><strong>Menu "Operacional"</strong>: Equipe, frota, saida para frota, abastecimento, ordem de servi&ccedil;o.</li>
+   </ul>
+   <div class="line">&nbsp;</div>
+   <h2 id="criando_empresa">Criando a empresas e fazendas</h2>
+   <p>Partindo do ponto que voc&ecirc; j&aacute; possua um cadastro na nossa plataforma &eacute; a hora de criar Empresas e Fazendas.</p>
+   <p><strong>Dica importante:</strong>&nbsp;caso sejam mais de uma fazenda para a mesma empresa, mas que sejam pequenas ou compartilhem todas m&aacute;quinas, produto e estoque, crie apenas uma Empresa e Fazenda.</p>
+   <p>Depois, nos cadastros de talh&atilde;o voc&ecirc; pode usar o campo Setor para idenficicar talh&atilde;o de cada fazenda.</p>
+   <p><strong>Empresa</strong></p>
+   <p>No menu "Arquivo" h&aacute; o item Empresa, ao acessar aparecer&aacute; a lista. H&aacute; um bot&atilde;o em azul chamado "Novo", pressione nele e preencha os campos e salve.</p>
+   <p>Fa&ccedil;a isso para todas as empresas que possuir.</p>
+   <p><strong>Fazenda/filial</strong></p>
+   <p>Depois, v&aacute; para o item Fazenda do mesmo menu "Arquivo".</p>
+   <p>Fa&ccedil;a a mesma coisa, pressione o bot&atilde;o "Novo", preencha os dados e salve. Fique atento no primeiro campo: "Empresa". &Eacute; isso que define de qual empresa essa fazenda/filial faz parte.</p>
+   <p><strong>Usu&aacute;rios</strong></p>
+   <p>Depois, v&aacute; para o menu Arquivo &gt; Usu&aacute;rios. Nessa tela ser&aacute; listada todas as empresas e suas filiais. Selecione a empresa, e a fazenda (ir&aacute; aparecer do lado da tabela de empresa).</p>
+   <p>Na sequ&ecirc;quencia ir&aacute; aparecer no meio da tela (abaixo da tabela de Empresa e Fazenda) uma lista de usu&aacute;rios cadastrados dessa fazenda. Voce pode criar novos usu&aacute;rios, alterar senha, etc.</p>
+   <p>Ao selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "menus" do sistema, para que voc&ecirc; defina permiss&atilde;o: Pode visualizar, inserir, editar ou excluir. Para definir, basta clicar em cima.</p>
+   <p><strong>Dica</strong>: Existe um bot&atilde;o azul para liberar acesso total e tamb&eacute;m aplicar perfil de t&eacute;cnico.</p>
+   <p><strong>Finaliza&ccedil;&atilde;o</strong></p>
+   <p>Agora est&aacute; pronto para fazer outros cadastros necess&aacute;rios, como talh&atilde;o, safra, etc. Para isso, v&aacute; no menu "Sair" (o &uacute;ltimo) e logue novamente, selecionando a Empresa e Fazenda criada.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="criando_usuario">Criando usu&aacute;rios e permiss&otilde;es</h2>
+   <p><strong>Os usu&aacute;rios podem ter acesso a uma ou mais fazendas.</strong></p>
+   <p>A tela fica no menu Arquivo &gt; Usu&aacute;rio.</p>
+   <p>Nessa tela ser&aacute; listada todas as empresas e suas filiais. Selecione a empresa, e a fazenda (ir&aacute; aparecer do lado da tabela de empresa).</p>
+   <p>Na sequ&ecirc;quencia ir&aacute; aparecer no meio da tela (abaixo da tabela de Empresa e Fazenda) uma lista de usu&aacute;rios cadastrados dessa fazenda.</p>
+   <p>Voc&ecirc; pode criar novos usu&aacute;rios, alterar senha, etc.<br /><br /><br /><strong>Para criar um novo</strong>: pressione o bot&atilde;o que fica na tabela do meio "Novo usu&aacute;rio".</p>
+   <p><strong><em>Observa&ccedil;&otilde;es</em></strong>: O login ser&aacute; feito atrav&eacute;s do campo E-mail&nbsp;<strong>OU</strong>&nbsp;login. Geralmente as pessoas criam os logins com o&nbsp;<strong>"Nome.Empresa"</strong>, exemplo: jonas.upcampo.<br /><br /><br /><strong>Para alterar um usu&aacute;rio</strong>: selecione o usu&aacute;rio em quest&atilde;o e v&aacute; no bot&atilde;o "Detalhar dados do usu&aacute;rio".<br /><br /><br /><strong>Para excluir um usu&aacute;rio da fazenda</strong>: selecione o usu&aacute;rio em quest&atilde;o e v&aacute; no bot&atilde;o "Excluir usu&aacute;rio da fazenda".<br /><br /><br /><strong>Incluir um usu&aacute;rio Existente</strong>: esta op&ccedil;&atilde;o serve para incluir um usu&aacute;rio que j&aacute; existe na plataforma upCampo, em outra fazenda. Ap&oacute;s selecionar o bot&atilde;o, escolha o usu&aacute;rio na lista.<br /><br /><br /></p>
+   <p><strong>Controle de acesso</strong></p>
+   <p>Ao selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "menus" do sistema, para que voc&ecirc; defina permiss&atilde;o: Pode definir se ele pode visualizar, inserir, editar ou excluir. Para definir, basta clicar em cima.</p>
+   <p><strong>Dica:</strong>&nbsp;Existe um bot&atilde;o azul para liberar acesso total e tamb&eacute;m aplicar perfil de t&eacute;cnico.</p>
+   <p><strong>Relat&oacute;rios</strong></p>
+   <p>Na guia Relat&oacute;rios, ap&oacute;s selecionar um usu&aacute;rio, ir&aacute; aparecer mais abaixo todos os "relat&oacute;rios" do sistema, para que voc&ecirc; definir o que ele poder&aacute; ver.</p>
+   <p><strong>Configura&ccedil;&otilde;es gerais</strong></p>
+   <p>Nesta guia h&aacute; op&ccedil;&otilde;es relativa a prefer&ecirc;ncias como "Tela inicial" e abastecimento entre outros.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="criando_estrutura_basica">Criando a estrutura b&aacute;sica (lavoura)</h2>
+   <p>A estrutura b&aacute;sica compreende no que &eacute; necess&aacute;rio para fazer levantamentos e ordens.</p>
+   <p>&Eacute; principalmente os talh&otilde;es e o que foi plantado em cada talh&atilde;o em determinada safra.</p>
+   <p>Ent&atilde;o a ordem de cadastros seria:</p>
+   <ol>
+      <li>
+         <p><strong>Talh&atilde;o</strong>&nbsp;- no menu Lavoura &gt; Talh&atilde;o. Talh&atilde;o normalmente n&atilde;o sofre altera&ccedil;&otilde;es em cada safra.</p>
+      </li>
+      <li>
+         <p><strong>Variedade</strong>&nbsp;- no menu B&aacute;sico &gt; Variedade.</p>
+      </li>
+      <li>
+         <p><strong>Safra</strong>&nbsp;- no menu Lavoura &gt; Safra.</p>
+      </li>
+      <li>
+         <p><strong>Plantio safra</strong>&nbsp;- no menu Lavoura &gt; Safra. &Eacute; aqui onde &eacute; relacionado o Talh&atilde;o com sua Cultura e suas variedades.</p>
+      </li>
+   </ol>
+   <p>Opcionalmente h&aacute; tamb&eacute;m:</p>
+   <ol start="4">
+      <li>
+         <p><strong>Pluvi&ocirc;metro</strong>&nbsp;- no menu Lavoura &gt; Pluvi&ocirc;metro.</p>
+      </li>
+      <li>
+         <p><strong>Grupo de armadilha</strong>&nbsp;- no menu B&aacute;sico &gt; Grupo de Armadilha. &Eacute; um agrupamento de armadilhas, por exemplo "Armadilha para bicudo".</p>
+      </li>
+      <li>
+         <p><strong>Armadilhas da safra</strong>&nbsp;- no menu Lavoura &gt; Armadilha Safra.</p>
+      </li>
+   </ol>
+   <p>Nos documentos a seguir h&aacute; um detalhamento de cada item destes.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="talhao">Talh&atilde;o</h2>
+   <p>Os talh&otilde;es s&atilde;o as separa&ccedil;&otilde;es das &aacute;reas da fazenda, as "parcelas" ou "campos".&nbsp;<strong>Aten&ccedil;&atilde;o</strong>: s&oacute; aparece estes talh&otilde;es no aplicativo ap&oacute;s a defini&ccedil;&atilde;o de "Plantio da Safra" com este Talh&atilde;o, ou seja, primeiro crie os talh&otilde;es e depois defina o que vai plantar na tela Plantio da Safra.</p>
+   <p>Est&aacute; no menu Lavoura &gt; Talh&atilde;o.</p>
+   <p><strong>Inserir um de cada vez</strong>: atrav&eacute;s do bot&atilde;o "Novo".</p>
+   <p>Os campos:</p>
+   <ol>
+      <li>
+         <p>C&oacute;digo - num&eacute;rico, serve para facilitar a ordena&ccedil;&atilde;o em relat&oacute;rios.</p>
+      </li>
+      <li>
+         <p>Descri&ccedil;&atilde;o - &eacute; o nome do talh&atilde;o, a maneira como voc&ecirc; identifica-o.</p>
+      </li>
+      <li>
+         <p>Setor - serve para agrupar talh&otilde;es. Um bom exemplo &eacute; fazendas grandes onde &eacute; separado por Setor Sul, Norte, Oeste, etc. Tamb&eacute;m &eacute; usado para separar fazendas, quando os cadastros s&atilde;o compartilhados (produtos, frota, estoque, etc).</p>
+      </li>
+      <li>
+         <p>Area - hectares total do talh&atilde;o. N&atilde;o confuda com hectares plantada em determinada safra.</p>
+      </li>
+      <li>
+         <p>Ativo - quando ativo ele aparece nas op&ccedil;&otilde;es do Plantio Safra. Serve para desativar e n&atilde;o perder hist&oacute;rico de lan&ccedil;amentos.</p>
+      </li>
+      <li>
+         <p>ID armaz. nuvem - &eacute; um n&uacute;mero interno que usamos para fazer a conex&atilde;o com o armazenamento em nuvem. Nunca deve ser alterado sem ajuda da equipe da upCampo.</p>
+      </li>
+   </ol>
+   <p><strong>Importar de um arquivo excel</strong>: no bot&atilde;o "Importar de excel". Para isso formate o excel com as colunas acima. &Eacute; importante sempre deletar todas as linhas que n&atilde;o houverem dados. Baixe aqui um exemplo de arquivo.</p>
+   <p><br /><br /></p>
+   <p><strong>Coordenadas</strong></p>
+   <p>Nesta guia &eacute; poss&iacute;vel importar um arquivo com as coordenadas do talh&atilde;o, ou seja, os limites dele. Os formatos poss&iacute;veis por enquanto s&atilde;o "shapefile" e "kmz - Google Earth". Para isso basta ir no bot&atilde;o "Importar arquivo", escolher o arquivo no seu computador e aguardar o mapa ser gerado. Se aparecer o desenho do mapa do talh&atilde;o, confirme para salvar.</p>
+   <p>Ou &eacute; poss&iacute;vel desenhar manualmente pressionando o bot&atilde;o "Desenhar manualmente". Nesta op&ccedil;&atilde;o voc&ecirc; vai selecionando no mapa os pontos para formar os limites do talh&atilde;o.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="safra">Safra</h2>
+   <p>Este cadastro &eacute; bastante simples. Preencha a descri&ccedil;&atilde;o, por exemplo: Safra 2022/2023.</p>
+   <p>Esta safra ser&aacute; relacionada nos Plantio da Safra em muitos outros itens do sistema (Ordem de servi&ccedil;o, Movimenta&ccedil;&atilde;o de notas, Contrato de venda, etc).</p>
+   <p>H&aacute; algumas guias (<strong>avan&ccedil;adas</strong>, no in&iacute;cio de sua jornada provalvelmente n&atilde;o usar&aacute; isso) para Par&acirc;metros de Colheita e outra guia para Arquivos. Veja os detalhes de cada:</p>
+   <p><br /><br /><br /><strong>Parametro de colheita</strong></p>
+   <p>&Eacute; aqui que &eacute; definido os Param&ecirc;tros para a colheita de cada cultura da fazenda. Por exemplo, se vai haver descontos de Umidade, Impureza, etc voc&ecirc; define aqui quais ser&atilde;o. Veja mais detalhes no t&oacute;pico "Configurando a colheita de gr&atilde;os".</p>
+   <p>O&nbsp;<strong>produto</strong>&nbsp;que ser&aacute; o&nbsp;<strong>resultado da colheita</strong>&nbsp;tamb&eacute;m &eacute; definido aqui, &eacute; este produto que entrar&aacute; para o&nbsp;<strong>estoque</strong>. Exemplo: cultura "soja", desconto "padr&atilde;o xx", entrar&aacute; para estoque como o Produto "Soja 001". Ent&atilde;o ao realizar "romaneios de colheita" ser&aacute; aplicado os descontos "padr&atilde;o xx" e o peso l&iacute;quido (sem os descontos) entrar&aacute; no estoque do armaz&eacute;m selecionado no romaneio.</p>
+   <p><br /><br /><strong>Arquivos</strong></p>
+   <p>Nesta guia &eacute; exibido os arquivos que foram adicionados na pasta do Google Drive da safra. Voc&ecirc; pode adicionar arquivos diversos no Google Drive, como um arquivo Excel, PDF, imagens, etc. Nesta guia &eacute; poss&iacute;vel classificar o arquivo, definir uma data e um t&iacute;tulo para este arquivo, que facilita a busca depois.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="plantio_safra">Plantio da Safra</h2>
+   <p>Uma dos principais cadastros, pois tudo come&ccedil;a com um Plantio.&nbsp;<strong>Somente depois deste cadastro &eacute; que o talh&atilde;o aparece no aplicativo</strong>.</p>
+   <p>Ent&atilde;o nesta tela associamos o&nbsp;<strong>Talh&atilde;o</strong>&nbsp;e a&nbsp;<strong>Cultura</strong>&nbsp;que est&aacute; na&nbsp;<strong>Safra</strong>&nbsp;que voc&ecirc; est&aacute; logada. Tamb&eacute;m deve-se colocar a &aacute;rea total (em hectares). Sobre a &aacute;rea, ela pode ser menor que a area total do talh&atilde;o, mas nunca maior.</p>
+   <p>Logo no in&iacute;cio h&aacute; um campo chamado "Cor", isso serve para mostrar no gr&aacute;fico de D.A.E presente na Dashboard. Como local preferencial, ser&aacute; buscado a cor aqui no Plantio Safra e quando n&atilde;o encontrado &eacute; buscado nas Variedades.</p>
+   <p>Dependendo do tipo da cultura (Perene ou Anual) ir&aacute; aparecer campos relativo a cultura, como "Plantas por hectare" ou "Dist&acirc;ncia entre ruas".</p>
+   <p><strong>Variedade</strong></p>
+   <p>Logo abaixo no cadastro h&aacute; um quadro de cor de diferente para a variedade e uma op&ccedil;&atilde;o: "<strong>Uma variedade</strong>" ou "<strong>Mais de uma variedade</strong>". Quando selecionado "uma variedade" &eacute; mais simples, basta preenchar a variedade desejada.</p>
+   <p>J&aacute; quando &eacute; "mais de uma", aparece op&ccedil;&otilde;es para ir adicionado muitas variedades. Lembrando que a &aacute;rea total das variedades n&atilde;o podem ser maiores que a &aacute;rea do talh&atilde;o. Observa&ccedil;&atilde;o: um campo nas op&ccedil;&otilde;es de "mais de uma variedade" &eacute; chamado de "Nome de exibi&ccedil;&atilde;o" serve para renomear esta variedade nas opera&ccedil;&otilde;es seguintes do sistema (ordens, aplicativo), isso se justifica quando o nome da Variedade &eacute; muito complexo, por exemplo em campos de experimento.</p>
+   <p><strong>Op&ccedil;&otilde;es de separar por variedade</strong></p>
+   <p>Quando &eacute; selecionado a op&ccedil;&atilde;o "Mais de uma variedade" aparece esta op&ccedil;&atilde;o para definir se vai&nbsp;<strong>separar por variedade</strong>&nbsp;em "Levantamentos, Colheita, Plantio, etc".</p>
+   <p>Basicamente quando marcado significa que todos os lan&ccedil;amentos deste Talh&atilde;o + Variedade ser&aacute; separado no item em quest&atilde;o.</p>
+   <p>Vamos ao exemplo: Um talh&atilde;o chamado "TH 01" possui as variedades "98YRR" e "99YRR". Ao marcar a op&ccedil;&atilde;o "Separar em levantamentos" aparecer&aacute; no aplicativo 2 itens dispon&iacute;veis para fazer levantamentos ("TH 01 - 98YRR" e "TH 01 - 99YRR"), ou seja, os monitores ter&atilde;o que fazer levantamento para cada uma e cada variedade ter&aacute; seus resultados&nbsp;<strong>separados</strong>.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="armadilha_safra">Armadilhas x Safra</h2>
+   <p>S&atilde;o o cadastro de cada armadilha da sua fazenda.</p>
+   <p>No campo "Grupo de armadilha" &eacute; a refer&ecirc;ncia a outro cadastro, para agrupar armadilhas por semelhan&ccedil;a. Por exemplo, "Armadilha para bicudo", "Armadilha para lagartas".</p>
+   <p>Ent&atilde;o cadastre aqui cada armadilha que voc&ecirc; possuir, com sua localiza&ccedil;&atilde;o. Isso possibilitar&aacute; que no aplicativo, na tela de Armadilhas, o usu&aacute;rio colete periodicamente quantas pragas encontrou.<em>texto em it&aacute;lico</em></p>
+   <div class="line">&nbsp;</div>
+   <h2 id="pluviometro">Pluviom&ecirc;tros &amp; esta&ccedil;&otilde;es metereol&oacute;gicas</h2>
+   <p>Neste cadastro voc&ecirc; cria todos os seus pluvi&ocirc;metro ou esta&ccedil;&atilde;o metereol&oacute;gica.</p>
+   <p><strong>Pra qu&ecirc;/por que?</strong>&nbsp;Para que voc&ecirc; grave todo o hist&oacute;rico de dados metereol&oacute;gicos da sua fazenda e possa comparar, avaliar e tomar decis&otilde;es baseado neste hist&oacute;rico. Possu&iacute;mos relat&oacute;rios e uma dashboard para visualizar estes dados.</p>
+   <p><strong>Como?</strong></p>
+   <p>No campo descri&ccedil;&atilde;o coloque um nome, uma refer&ecirc;ncia para identificar o pluvi&ocirc;metro/esta&ccedil;&atilde;o. Um exemplo seria: TH 01 e TH 02.</p>
+   <p>O campo link API serve para que o sistema busque automaticamente dados da esta&ccedil;&atilde;o e importe na upCampo. Para mais detalhes desta integra&ccedil;&atilde;o, converse com nossa equipe!</p>
+   <p>Abaixo h&aacute; guias para Talh&atilde;o, Localiza&ccedil;&atilde;o e Coletas. Vamos ver cada uma delas:</p>
+   <p><strong>Talh&atilde;o</strong></p>
+   <p>Aqui voc&ecirc; insere os talh&otilde;es que este pluvi&ocirc;metro/esta&ccedil;&atilde;o que se refere. Por exemplo, se voc&ecirc; possui um pluviometro que est&aacute; no cruzamento de 4 talh&otilde;es, adicione os 4 aqui.</p>
+   <p>Isso far&aacute; com que o sistema entenda quais dados de chuva recuperar em relat&oacute;rios, dashboard pra cada talh&atilde;o.</p>
+   <p><strong>Localiza&ccedil;&atilde;o</strong></p>
+   <p>&Eacute; a localiza&ccedil;&atilde;o geogr&aacute;fica do pluvi&ocirc;metro/esta&ccedil;&atilde;o, latitude e longitude. Com isso conseguimos gerar mapas com cada pluvi&ocirc;metro/esta&ccedil;&atilde;o. A localiza&ccedil;&atilde;o pode ser configurada pelo Aplicativo, que captura automaticamente pelo GPS do dispositivo.</p>
+   <p><strong>Coleta</strong></p>
+   <p>Aqui &eacute; exibido as coletas desse pluvi&ocirc;metro/esta&ccedil;&atilde;o. As coletas normalmente s&atilde;o realizadas com o Aplicativo, direto do campo.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="levantamentos">Levantamentos</h2>
+   <p>S&atilde;o os levantamentos MIP que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
+   <p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
+   <p>Para visualizar os levantamentos "prontos", acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="observacoes">Observa&ccedil;&otilde;es</h2>
+   <p>S&atilde;o as observa&ccedil;&otilde;es que foram criadas pelo Aplicativo de forma bruta. Cada registro lan&ccedil;ado pelo aplicativo aparece aqui.</p>
+   <p>Ajustes, exclus&atilde;o podem ser realizados aqui.</p>
+   <p>Para visualizar junto com os levantamentos, acesse a&nbsp;<strong>Dashboard Levantamento MIP</strong>, ou nos menu Relat&oacute;rios.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="An&aacute;lises">An&aacute;lises</h2>
+   <p>Aqui s&atilde;o as An&aacute;lises e Coletas realizadas da fazenda. De forma "bruta", pois est&atilde;o os dados em formato de listagem/banco de dados.</p>
+   <p>Ainda em desenvolvimento, em breve haver&aacute; op&ccedil;&otilde;es para coletar amostras pelo Aplicativo e os dados "trabalhados" e "mapas" com resultados dessas an&aacute;lises coletadas.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="coletas_fardos">Coletas de fardos</h2>
+   <p>Se refere a coletas de fardos de algod&atilde;o.</p>
+   <p>&Eacute; preciso re-lembrar a rotina na pr&aacute;tica: a colheitadeira recupera o algod&atilde;o das plantas e gera um fardo. Este fardo fica no campo e depois &eacute; coletado. Esta tela &eacute; relativo a esta coleta.</p>
+   <p>Nosso aplicativo possui uma tela espec&iacute;fica para criar os fardos, onde o usu&aacute;rio vai registrando cada fardo direto do campo.</p>
+   <p>E tamb&eacute;m h&aacute; no aplicativo tela espec&iacute;fica para coleta.</p>
+   <p>Normalmente ap&oacute;s a coleta no campo &eacute; pesado na sede da fazenda e posteriomente beneficiado na algodoeira. Esta tela &eacute; onde &eacute; registrado estes pesos e beneficiamento.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="dashboard_levantamento">Dashboard Levantamentos MIP</h2>
+   <p>Mostramos todas as informa&ccedil;&otilde;es coletadas no campo referente a Levantamentos. Hist&oacute;rico, mapas, gr&aacute;ficos, tudo para auxiliar a tomada de decis&atilde;o.</p>
+   <p>&Eacute; a tela onde o tomador de decis&atilde;o referente a aplica&ccedil;&atilde;o de defensivos mais usa, por estar tudo centralizado.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="dashboard_armadilha">Dashboard Armadilhas</h2>
+   <p>Centraliza as coletas de armadilhas e mostra no mapa a situa&ccedil;&atilde;o de cada armadilha.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="dashboard_pluviometro">Dashboard Pluvi&ocirc;metros</h2>
+   <p>As coletas de dados metereol&oacute;gicos s&atilde;o exibidas em formato de gr&aacute;fico e futuramente em mapa.</p>
+   <p>&Eacute; poss&iacute;vel filtrar per&iacute;odos e comparar entre pluvi&ocirc;metros.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="configurando_colheita">Configurando a colheita de gr&atilde;os</h2>
+   <p>Para a colheita de gr&atilde;os, que precisam de romaneios &eacute; necess&aacute;rio configurar alguns param&ecirc;tros. Ou seja, definir se vai haver descontos e qual tabela usar. Siga os passos:</p>
+   <ol>
+      <li>
+         <p>Verifique quais descontos (Umidade, Impureza, Avariado, Ardido, Quebrado ou Armazenagem) dos romaneios de colheita ser&atilde;o usado para a safra;</p>
+      </li>
+      <li>
+         <p>No menu "B&aacute;sico &gt; Desconto padr&atilde;o/Colheita gr&atilde;os" &eacute; onde voc&ecirc; deve criar este descontos.</p>
+      </li>
+      <li>
+         <p>No menu "Lavoura &gt; Safra" selecione a safra em quest&atilde;o e na guia "Param&ecirc;tros de colheita".</p>
+      </li>
+      <li>
+         <p>Defina a "Cultura" e o "Produto" que entrar&aacute; no estoque.</p>
+      </li>
+      <li>
+         <p>Defina quais ser&atilde;o as tabelas de "Descontos" de cada item (Umidade, Avariado, etc). N&atilde;o &eacute; obrigat&oacute;rio ter descontos, para n&atilde;o usar basta deixar em branco.</p>
+      </li>
+      <li>
+         <p>Ap&oacute;s os passos acima, o Romaneio de Colheita est&aacute; pronto. V&aacute; ao menu "Lavoura &gt; Romaneio de Colheita" e fa&ccedil;a um lan&ccedil;amento. Fique atento aos desconto, se houverem, lan&ccedil;e alguns descontos aleat&oacute;rios e verifique se est&aacute; puxando conforme necessidade. Verifique tamb&eacute;m o saldo do produto antes e depois dos lan&ccedil;amentos.</p>
+      </li>
+      <li>
+         <p>Gere uma impress&atilde;o, pelo bot&atilde;o "relat&oacute;rio" a partir da tela de Romaneio (ao lado do bot&atilde;o salvar).</p>
+      </li>
+      <li>
+         <p>Pronto! Boa colheita =)</p>
+      </li>
+   </ol>
+   <div class="line">&nbsp;</div>
+   <h2 id="entendendo_estoque">Entendendo o estoque</h2>
+   <p>A gest&atilde;o do estoque &eacute; muito importante para qualquer organiza&ccedil;&atilde;o, por isso, sempre que poss&iacute;vel utilize-a.</p>
+   <p>Na upCampo tentamos focar na parte objetiva, sem burocracia. Por isso, se houver sugest&atilde;o de simplifica&ccedil;&atilde;o estamos sempre abertos.</p>
+   <p>Para a gest&atilde;o de estoque &eacute; preciso de<strong> 3&nbsp;itens b&aacute;sicos</strong>:</p>
+   <ul>
+      <li><strong>Classe de produto</strong>: n&atilde;o &eacute; obrigat&oacute;rio, mas &eacute; muito recomendado pois facilita nos relat&oacute;rios e na vis&atilde;o "macro". Exemplos: "Fungicida", "Herbicidas", "Inseticida", "Pe&ccedil;as", etc;</li>
+      <li><strong>Produto</strong>: o produto em s&iacute;;</li>
+      <li><strong>Local de estoque</strong>: onde &eacute; armazenado o produto.</li>
+   </ul>
+   <p>A partir destes cadastros acima, est&aacute; pronto para come&ccedil;ar as movimenta&ccedil;&otilde;es.</p>
+   <p>Podem ser movimentado o estoque pelas telas:</p>
+   <ul>
+      <li>Movimenta&ccedil;&atilde;o</li>
+      <li>Ordem de servi&ccedil;o</li>
+      <li>Transfer&ecirc;ncia entre locais</li>
+      <li>Empr&eacute;stimo de produtos</li>
+      <li>Romaneio de colheita</li>
+      <li>Romaneio de sa&iacute;da</li>
+      <li>Abastecimento</li>
+      <li>Sa&iacute;da para frota</li>
+   </ul>
+   <p>A <strong>entrada para o estoque</strong>&nbsp;&eacute; feita, <strong>principalmente</strong>, pela tela de "Movimenta&ccedil;&atilde;o". Nesta tela h&aacute; op&ccedil;&atilde;o de "Entrada com nota fiscal" e "Avulsa".</p>
+   <p>Al&eacute;m da movimenta&ccedil;&atilde;o, um produto pode <em><strong>entrar/ser adicionado&nbsp;</strong></em>via "Romaneio de Colheita" e "Transfer&ecirc;ncia" e "Empr&eacute;stimo".</p>
+   <p>J&aacute; a <strong>sa&iacute;da do estoque</strong>, na maioria das vezes &eacute; realizada pelas "Ordens de servi&ccedil;o", "Abastecimento" e "Romaneio de sa&iacute;da".</p>
+   <p>Al&eacute;m destas telas, na "Transfer&ecirc;ncia", "Movimenta&ccedil;&atilde;o", "Emprestimo" e "Sa&iacute;da para frota" tamb&eacute;m &eacute; poss&iacute;vel realizar sa&iacute;das.</p>
+   <p><strong>Todas as telas</strong> com refer&ecirc;ncia com estoque h&aacute; um bot&atilde;o chamado "<span style="color: #ff0000;"><strong>Ver estoque</strong></span>" ao lado dos outros (novo, excluir, etc). Neste bot&atilde;o rapidamente &eacute; mostrado todos os itens e seus saldos. Ao clicar em cima de qualquer um, o sistema mostra toda a moviemnta&ccedil;&atilde;o dele naquele local de estoque.</p>
+   <div class="line">
+      <h2>Organograma do Estoque</h2>
+      <p><img src="https://static.wixstatic.com/media/482773_388ddc9c840440e8bb229acb6ec7ca65~mv2.png" alt="Organograma do estoque" width="500" data-cke-saved-src="https://static.wixstatic.com/media/482773_388ddc9c840440e8bb229acb6ec7ca65~mv2.png" /></p>
+   </div>
+   <h2 id="classe_produto">Classe de produto</h2>
+   <p>Cada produto pode ter uma classe. Isso &eacute; muito &uacute;til para agrupar produtos parecidos.</p>
+   <p>Com esta organiza&ccedil;&atilde;o de Classes fica bastante f&aacute;cil obter informa&ccedil;&otilde;es como: "Qual classe de produtos eu tenho consumido mais", ou, "Gasto mais com herbicidas, fungicidas, ou qual classe?".</p>
+   <p>O cadastro &eacute; b&aacute;sico, c&oacute;digo e descri&ccedil;&atilde;o.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="produto">Produto</h2>
+   <p>Cadastro muito importante para toda sequ&ecirc;ncia de controles de estoque e custos.</p>
+   <p>Os campos obrigat&oacute;rios s&atilde;o a "descri&ccedil;&atilde;o" e "unidade". Todos os outros s&atilde;o opcionais, preencha sempre que poss&iacute;vel.</p>
+   <p><strong>Sobre unidade, </strong>&eacute; importante escolher a unidade que normalmente &eacute; a sa&iacute;da do estoque, pois &eacute; dessa forma que voc&ecirc; vai mais usar.</p>
+   <p><span style="color: #ff0000;"><strong>Importa&ccedil;&atilde;o de excel</strong></span></p>
+   <p>Sabemos que &eacute; utilizado muitos produtos durante uma safra e possivelmente j&aacute; h&aacute; algum tipo de controle. Esta op&ccedil;&atilde;o existe para importar a partir de um arquivo excel.</p>
+   <p>Quando clicar nesta op&ccedil;&atilde;o (que fica ali do lado direito do bot&atilde;o "novo"), aparece uma janela com a instru&ccedil;&atilde;o do formato do arquivo excel. Mais abaixo um bot&atilde;o chamado "Importar excel" que &eacute; o qual voc&ecirc; seleciona o arquivo excel.</p>
+   <p><strong>Importante</strong>: exclua todas as linhas sem conte&uacute;do que normalmente fica no final do arquivo, ou seja, deixei apenas as linhas com conte&uacute;do.</p>
+   <p><strong>Princ&iacute;pio ativo</strong></p>
+   <p>H&aacute; uma guia chamada "Princ&iacute;pio ativo", para voc&ecirc; relacionar um ou mais princ&iacute;pios ativos. Isto &eacute; bastante importante para produtos qu&iacute;micos (fdefensivos, etc), pois na hora da cria&ccedil;&atilde;o da recomenda&ccedil;&atilde;o/ordem de servi&ccedil;o &eacute; poss&iacute;vel pesquisar pelo princ&iacute;pio.</p>
+   <p>Como sabemos que normalmente h&aacute; v&aacute;rios princ&iacute;pios para um produto, existe um bot&atilde;o chamado "<strong>Importa&ccedil;&atilde;o r&aacute;pido/din&acirc;mico</strong>". Nessa op&ccedil;&atilde;o &eacute; poss&iacute;vel selecionar v&aacute;rios para adicionar de uma vez (&eacute; bem mais r&aacute;pido).</p>
+   <p>O cadastro do princ&iacute;pio em si &eacute; mantido por n&oacute;s da upCampo, caso falte algum contate imediatamente pelo whatsapp que n&oacute;s adicionamos pra voc&ecirc;. Ou seja, voc&ecirc; s&oacute; relaciona quais princ&iacute;pios s&atilde;o do produto, o resto deixa com a gente.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="local_estoque">Local de estoque</h2>
+   <p>&Eacute; o lugar onde &eacute; "guardado", "armazenado" os produtos. Tamb&eacute;m &eacute; chamado de Almoxarifado, Barrac&atilde;o, Armaz&eacute;m, Silo entre outros.</p>
+   <p>Por exemplo, em uma fazenda normalmente h&aacute; os locais: "Barrac&atilde;o de defensivos", "Barrac&atilde;o de sementes", "Barrac&atilde;o de Adubos", "Silo geral", "Posto de combust&iacute;vel".</p>
+   <p>O campo "Nome/descri&ccedil;&atilde;o &eacute; obrigat&oacute;rio.</p>
+   <p>Ainda h&aacute; v&aacute;rias op&ccedil;&otilde;es, que &eacute; importante saber o que significa cada:</p>
+   <ul>
+      <li>Ativo - caso um local n&atilde;o exista mais ele precisa ser desativado e nunca exclu&iacute;do, para preservar o hist&oacute;rico de movimenta&ccedil;&otilde;es relacionadas;</li>
+      <li>Controlar saldo - quando marcado n&atilde;o ser&aacute; permitido que o saldo fique menor que zero, ou seja, opera&ccedil;&otilde;es ser&atilde;o abortadas caso n&atilde;o haja saldo suficiente;<br /><br /></li>
+      <li>Exibir na movimenta&ccedil;&atilde;o - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Movimenta&ccedil;&otilde;es (entrada de NF);<br /><br /></li>
+      <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Empr&eacute;stimo de produtos;<br /><br /></li>
+      <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Transfer&ecirc;ncia;<br /><br /></li>
+      <li>Exibir na Empr&eacute;stimo - significa que este local ser&aacute; mostrado nas op&ccedil;&otilde;es da tela de Ordem de servi&ccedil;o;<br /><br /></li>
+      <li>Pr&oacute;pio - para sinalizar que &eacute; um local seu, que voc&ecirc; tem total controle (n&atilde;o de terceiros, em terceiros);</li>
+      <li>Abastecimento - sinaliza que &eacute; um "posto", isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a combust&iacute;veis;<br />Quando esta op&ccedil;&atilde;o abastecimento est&aacute; selecionada &eacute; exibida dois novos campos:
+         <ul>
             <li>Produto (caso o local seja de um produto espec&iacute;fico, s&oacute; um);</li>
             <li>Campo infomrado no abastecimento: qual campo o usu&aacute;rio ir&aacute; preencher. Se for Leiutura inicial e final da bomba, o usu&aacute;rio precisar&aacute; preencher estes campos no momento do abastecimento. Se for Litros, ele informar&aacute; apenas o Litros que foram no abastecimento e o sistema ir&aacute; calcular a leitura final automaticamente.<br /><br /></li>
-            </ul>
-            </li>
-            <li>Silo - sinaliza que &eacute; silo de armazenagem, isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a armazenagem (romaneios, contratos de venda, etc).<br /><br /></li>
-            </ul>
-            <p>Tamb&eacute;m a op&ccedil;&atilde;o Entidade (terc.), que &eacute; usada para associar este local a um terceiro. Muito usado quando sua fazenda recebe produtos de um vizinho (gr&atilde;os).</p>
-            <p>L&aacute; em cima, ao lado do bot&atilde;o "novo", h&aacute; um bot&atilde;o chamado "<span style="color: #ff0000;"><strong>Ver estoque</strong></span>". Ele est&aacute; presente em todas as telas que h&aacute; movimenta&ccedil;&atilde;o de estoque e serve para mostrar imediatamente todos os produtos do seu estoque.</p>
-            <p>&nbsp;</p>
-            <p><strong>Estoque</strong></p>
-            <p>Um local de estoque &eacute; um "agrupamento", local onde est&atilde;o um ou v&aacute;rios produtos. Cada um deste produto tem o seu "estoque", ou seja, seu saldo.</p>
-            <p>Nesta guia &eacute; exibido todos os produtos que o local possui e seus saldos.&nbsp;</p>
-            <p>Aqui &eacute; poss&iacute;vel alterar a <strong>capacidade total</strong> e <strong>estoque m&iacute;nimo</strong>. Quando houver produtos, selecione e poder&aacute; alterar estas op&ccedil;&otilde;es. S&atilde;o importantes para algumas situa&ccedil;&otilde;es, como combust&iacute;veis. Solicite a equipe configura&ccedil;&atilde;o de envio autom&aacute;tico de e-mail quando o estoque chegar o n&iacute;vel m&iacute;nimo.</p>
-            <p>N&atilde;o &eacute; poss&iacute;vel adicionar por aqui um novo Estoque, nem alterar saldos, custos, etc.</p>
-            <p>Toda movimenta&ccedil;&atilde;o do estoque &eacute; realizada pelas outras telas: Movimenta&ccedil;&atilde;o, Transfer&ecirc;ncia, Ordem de servi&ccedil;o, Empr&eacute;stimo, etc.</p>
-            <p>&nbsp;</p>
-            <p><strong>Bomba</strong></p>
-            <p>Quando o local &eacute; um "posto de combust&iacute;vel" esta guia ter&aacute; q ser preenchida, para informar quais bombas existem. Normalmente cada bomba possui seu contador, e ele precisa ser informado nos abastecimentos.</p>
-
-            <div class="line"></div>
-             <h2 id="local_descarga">Local de descarga</h2>
-            
-            <p>Parecido com o Local de Estoque, este &eacute; mais simples e n&atilde;o h&aacute; <strong>controle r&iacute;gido de estoque</strong>.</p>
-<p>Isso significa que n&atilde;o haver&aacute; controle de saldo.</p>
-<p>Um bom exemplo de uso s&atilde;o aqueles locais que ficam no campo, como de c&aacute;lcario e gesso. Ent&atilde;o &eacute; poss&iacute;vel sinalizar o local de descarga quando receber o produto e tamb&eacute;m na sa&iacute;da (ordem de servi&ccedil;o por exemplo). Mas o saldo controlado de estoque, que geram custo, &eacute; o do Local de Estoque.</p>
-<p>Isso se deve por que ficaria muito complexo controlar o saldo de cada local de descarga, mas se vo&ccedil;&ecirc; quiser nada impede: use Local de Estoque.</p>
-            
-            
-              <div class="line"></div>
-             <h2 id="entidade">Entidade</h2>
-            
-            
-            <p>S&atilde;o o cadastro de Fornecedores, Clientes, Vizinhos entre outros.</p>
-<p>Tudo que tem um CPF ou CNPJ.</p>
-<p>Este cadastro tem uma funcionalidade bastante &uacute;til caso seja a partir de um CNPJ: digite o cnpj no campo e v&aacute; em "<strong>Recuperar dados</strong>". N&oacute;s iremos at&eacute; o sistema da receita federal e recuperamos todos os dados deste CNPJ.</p>
-<p>As op&ccedil;&otilde;es l&aacute; no final, "Fornecedor", "Cliente" etc &eacute; auto explicativo. &Eacute; para sinalizar que tipo esta entidade &eacute; e dependendo desta sele&ccedil;&atilde;o ser&aacute; listado nas op&ccedil;&otilde;es de cadastros referente. Por exemplo, terceiro aparecer&aacute; no campo Terceiro no cadastro de Frota.</p>
-            
-            
- 			<div class="line"></div>
-             <h2 id="entendendo_nuvem">Entendendo a nuvem da upCampo</h2>
-            
-            
-           <p>A nuvem da upCampo &eacute; uma integra&ccedil;&atilde;o com o <a title="Google Drive" href="https://www.google.com.br/drive" target="_blank" rel="noopener"><strong>Google Drive</strong></a>. Isso permite que voc&ecirc; agrupe arquivos da fazenda em uma pasta que fica dentro da conta da upCampo.</p>
-			<p>Desta forma tudo fica organizado: cada talh&atilde;o cadastrado na upCampo cria uma pasta dentro do Google Drive, assim como no cadastro de Safra, Empresa e Fazenda.</p>
-			<p>Como utilizamos integra&ccedil;&atilde;o total com o Google Drive, toda a equipe pode se benefeciar dos recursos do Google que s&atilde;o:</p>
-			<ul>
-			<li><strong>Trabalhe offline</strong>: n&atilde;o &eacute; preciso acessar a nossa plataforma para salvar um arquivo e nem internet o tempo todo. Basta instalar o programa do Google Drive nos computadores da equipe (ou aplicativo em um smartphone) e ent&atilde;o "jogar" um arquivo para as pastas da fazenda uma c&oacute;pia autom&aacute;tica &eacute; criada na nuvem. Voc&ecirc; edita como se fosse um arquivo local e automaticamente isso &eacute; refletido para a nuvem.</li>
-			<p>&nbsp;</p>
-			<li><strong>Permiss&otilde;es</strong>: voc&ecirc; pode definir permiss&otilde;es de acesso para cada membro da sua equipe, basta ele possuir um e-mail no Gmail do Google.</li>
-			<p>&nbsp;</p>
-			<li><strong>Compartilhamento</strong>: uma vez que definiu permiss&otilde;es para cada membro da sua equipe, ao instalar o programa do Google Drive as pastas que ele t&ecirc;m acesso ser&aacute; mantida sincronizada autom&aacute;ticamente, &eacute; como se fosse um servidor (computador central) na sua rede.<br /><br /></li>
-			<p>&nbsp;</p>
-			<li><strong>Seguran&ccedil;a</strong>: como os arquivos ficam com c&oacute;pias na nuvem (internet) estar&aacute; sempre coberto contra imprevistos, como um computador estragar, por exemplo.<br />Tamb&eacute;m t&ecirc;m a quest&atilde;o da confidencialidade: somente os usu&aacute;rios autorizados pela fazenda em quest&atilde;o podem ter acesso a estes arquivos. Um usu&aacute;rio da upCampo &eacute; necess&aacute;rio, para manter centralizado na nossa conta, mas de maneira nenhuma &eacute; visualizado, copiado ou editado qualquer arquivo dentro de <strong>SUA</strong> pasta. Esta &eacute; uma grande vantagem de nossa empresa ser totalmente independente, sem vinculo nenhum com nenhuma grande multinacional como s&atilde;o nossos concorrentes.</li>
-			</ul>
-			<p>&nbsp;</p>
-			<p><strong>T&aacute;, mas e se eu n&atilde;o quiser mais trabalhar com a upCampo, perco tudo? como eu fa&ccedil;o?</strong></p>
-			<p>R: Basta nos avisar que n&oacute;s providenciaremos a mudan&ccedil;a dos arquivos para outra conta que seja somente sua. Se quiser fazer sem comunicar nossa equipe, tamb&eacute;m d&aacute;, pois voc&ecirc;s sempre ter&atilde;o uma c&oacute;pia de todos os arquivos nos computadores da equipe, basta copiar para outro lugar e apagar da pasta da upCampo.</p>
-			<p>&nbsp;</p>
-			<p>Siga vendo o conte&uacute;do abaixo para mais detalhes.</p>
-
-
- 			<div class="line"></div>
-             <h2 id="conta_gmail">Criando uma conta no Gmail</h2>
-            
-            
-           <p>&Eacute; necess&aacute;rio a equipe possuir uma conta no Gmail (servi&ccedil;o de e-mail no Google). Ela &eacute; totalmente gratu&iacute;da.</p>
-			<ol>
-			<li>Para criar acesso o site: <a title="www.gmail.com" href="https://www.gmail.com" target="_blank" rel="noopener"><strong>www.gmail.com</strong></a>&nbsp;</li>
-			<p>&nbsp;</p>
-			<li>No canto superior direito existe um bot&atilde;o chamado <strong>"Crie uma Conta"</strong>, pressione ele.<br />Caso voc&ecirc; acesse este caminho e j&aacute; esteja direcionado a um e-mail quer dizer que voc&ecirc; j&aacute; possui uma conta, para novas contas saia dessa atual e v&aacute; para o "Crie uma Conta".</li>
-			<p>&nbsp;</p>
-			<li>Preencha os dados, como nome e sobrenome, nome de usu&aacute;rio (se voc&ecirc; preferir criar uma conta somente para o uso dentro da sua fazenda sugerimos que voc&ecirc; crie assim: <a href="mailto:nome.nomefazenda@gmail.com">nome.nomefazenda@gmail.com</a>.</li>
-			</ol>
-			<p>Pronto! conta criada, agora &eacute; s&oacute; alguem que j&aacute; possuia acesso compartilhar as pastas com esta conta rec&eacute;m criada.</p>
-
-
-			<div class="line"></div>
-             <h2 id="baixando_sincronizacao">Baixando o programa para sincronização offline</h2>
-            
-            
-			<p>O programa do Google Drive &eacute; interessante por que ele cria as pastas que est&atilde;o na nuvem localmente no seu computador e mant&ecirc;m sempre sincronizadas.</p>
-			<p>Isso &eacute; opcional, uma vez que o Google Drive possui uma interface on line onde &eacute; poss&iacute;vel fazer tudo.</p>
-			<p>Para baixar, acesso o site: <a title="www.google.com.br/drive" href="http://www.google.com.br/drive" target="_blank" rel="noopener">www.google.com.br/drive</a>&nbsp;e l&aacute; embaixo, no rodap&eacute;, h&aacute; um link "<strong>Fazer download</strong>".</p>
-			<p>Veja os caminhos atuais (o google pode alterar o caminho, qualquer quebra de endere&ccedil;o nos avise):</p>
-			<ul>
-			<li>O caminho atual para computadore com Windows e Mac &eacute;: <a href="https://tools.google.com/dlpage/drive/?hl=br&amp;utm_source=pt-BR&amp;utm_medium=link&amp;utm_campaign=web&amp;utm_content=dldrive&amp;utm_term=appspagefooter&amp;usp=apps_start#eula" target="_blank" rel="noopener">clique aqui no link</a></li>
-			<li>O caminho atual para celulares Android &eacute;: <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs&amp;hl=pt-BR" target="_blank" rel="noopener">clique aqui no link</a></li>
-			<li>O caminho atual para celulares Iphone &eacute;: <a href="https://itunes.apple.com/us/app/google-drive/id507874739?mt=8" target="_blank" rel="noopener">clique aqui no link</a></li>
-			</ul>
-			<p>Ap&oacute;s o donwload e a instala&ccedil;&atilde;o fa&ccedil;a:&nbsp;</p>
-			<ol>
-			<li>logue com sua conta Gmail.<br /><br /></li>
-			<li>A instala&ccedil;&atilde;o ir&aacute; perguntar quais pastas voc&ecirc; quer manter sincronizadas, marque qual voc&ecirc; quiser, estas pastas locais como "Area de trabalho", "Meus documentos", n&atilde;o fazem parte da integra&ccedil;&atilde;o da upCampo. Por isso use a vontade, &eacute; uma boa pr&aacute;tica.<br /><br /></li>
-			<li>As pastas da upCampo referente a sua fazenda ser&atilde;o sincronizada automaticamente (todas as pastas que esta conta t&ecirc;m permiss&atilde;o).<br /><br /></li>
-			<li>Agora &eacute; s&oacute; salvar arquivos dentro desta pasta local e pronto!</li>
-			</ol>
-
-
-			<div class="line"></div>
-             <h2 id="compartilhando_drive_equipe">Compartilhando entre a equipe</h2>
-            
-           <p>Quando a upCampo libera este recurso para a fazenda n&oacute;s autorizamos para uma conta Gmail de voc&ecirc;s o controle total de suas pastas.</p>
-			<p>A partir desta conta voc&ecirc; pode compartilhar com outras pessoas da sua equipe, lembrando que toda a equipe que ir&aacute; acessar precisa ter uma conta Gmail.</p>
-			<ol>
-			<li>Para isso, acesso o Google Drive on line no caminho: <br /><a title="Google Drive" href="https://drive.google.com/" target="_blank" rel="noopener">https://drive.google.com/</a><br /><br /><br /></li>
-			<li>Selecione a pasta desejada;<br /><br /></li>
-			<li>Clique com o bot&atilde;o direito do mouse em cima da pasta;<br /><br /></li>
-			<li>V&aacute; na segunda op&ccedil;&atilde;o "Compartilhar";<br /><br /></li>
-			<li>Ir&aacute; aparecer uma tela para voc&ecirc; digitar os e-mails, basta ir colocando todos os desejados.</li>
-			</ol>
-			<p>Pronto! agora eles poder&atilde;o acessar as pastas.</p>
-			<p>&nbsp;</p>
-
-
-
-			<div class="line"></div>
-             <h2 id="acessando_nuvem_na_plataforma">Acessando a nuvem na Plataforma upCampo</h2>
-            
-         <p>Feito os passos acima, voc&ecirc; j&aacute; deve ter adicionado alguns arquivos para dentro das pastas.</p>
-<p>Na plataforma upCampo, dentro do cadastro do Talh&atilde;o haver&aacute; uma guia chamada "<strong>Arquivos</strong>". Ali ser&aacute; listado todos os arquivos que est&atilde;o na nuvem.</p>
-<p>Assim voc&ecirc; pode "Classific&aacute;-los", com uma descri&ccedil;&atilde;o, uma safra, adicionar uma data. Isso facilita depois na procura de algum arquivo.</p>
-<p>Esta guia "Arquivos" est&aacute; presente na tela de cadastro de Talh&atilde;o, Safra, Empresa e Filial.</p>
-<p>Existe uma tela chamada "<strong>Central de arquivos</strong>"(menu relat&oacute;rio) onde s&atilde;o exibidos todos os arquivos, com op&ccedil;&otilde;es para pesquisar por nome e data por exemplo. Tamb&eacute;m &eacute; poss&iacute;vel visualizar rapidamente o item desejado.</p>
-<p>A localiza&ccedil;&atilde;o desta tela &eacute; no menu "<strong>Relat&oacute;rio"</strong>, &eacute; o primeiro item: "<strong>Central de arquivos</strong>".</p>
-<p>No aplicativo, dentro do talh&atilde;o h&aacute; uma guia "Arquivo" tamb&eacute;m, mas s&oacute; s&atilde;o exibidos os arquivos que foram classificados (com descri&ccedil;&atilde;o).</p>
-<p>&nbsp;</p>
-
-
-
-         </div>
-      </div>
-      <!-- jQuery CDN - Slim version (=without AJAX) -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <!-- Popper.JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-      <script type="text/javascript">
-         $(document).ready(function () {
-             $('#sidebarCollapse').on('click', function () {
-                 $('#sidebar').toggleClass('active');
-             });
-         });
-      </script>
-   </body>
-</html>
+         </ul>
+      </li>
+      <li>Silo - sinaliza que &eacute; silo de armazenagem, isso far&aacute; com que seja exibido essa op&ccedil;&atilde;o nas telas referentes a armazenagem (romaneios, contratos de venda, etc).<br /><br /></li>
+   </ul>
+   <p>Tamb&eacute;m a op&ccedil;&atilde;o Entidade (terc.), que &eacute; usada para associar este local a um terceiro. Muito usado quando sua fazenda recebe produtos de um vizinho (gr&atilde;os).</p>
+   <p>L&aacute; em cima, ao lado do bot&atilde;o "novo", h&aacute; um bot&atilde;o chamado "<span style="color: #ff0000;"><strong>Ver estoque</strong></span>". Ele est&aacute; presente em todas as telas que h&aacute; movimenta&ccedil;&atilde;o de estoque e serve para mostrar imediatamente todos os produtos do seu estoque.</p>
+   <p>&nbsp;</p>
+   <p><strong>Estoque</strong></p>
+   <p>Um local de estoque &eacute; um "agrupamento", local onde est&atilde;o um ou v&aacute;rios produtos. Cada um deste produto tem o seu "estoque", ou seja, seu saldo.</p>
+   <p>Nesta guia &eacute; exibido todos os produtos que o local possui e seus saldos.&nbsp;</p>
+   <p>Aqui &eacute; poss&iacute;vel alterar a <strong>capacidade total</strong> e <strong>estoque m&iacute;nimo</strong>. Quando houver produtos, selecione e poder&aacute; alterar estas op&ccedil;&otilde;es. S&atilde;o importantes para algumas situa&ccedil;&otilde;es, como combust&iacute;veis. Solicite a equipe configura&ccedil;&atilde;o de envio autom&aacute;tico de e-mail quando o estoque chegar o n&iacute;vel m&iacute;nimo.</p>
+   <p>N&atilde;o &eacute; poss&iacute;vel adicionar por aqui um novo Estoque, nem alterar saldos, custos, etc.</p>
+   <p>Toda movimenta&ccedil;&atilde;o do estoque &eacute; realizada pelas outras telas: Movimenta&ccedil;&atilde;o, Transfer&ecirc;ncia, Ordem de servi&ccedil;o, Empr&eacute;stimo, etc.</p>
+   <p>&nbsp;</p>
+   <p><strong>Bomba</strong></p>
+   <p>Quando o local &eacute; um "posto de combust&iacute;vel" esta guia ter&aacute; q ser preenchida, para informar quais bombas existem. Normalmente cada bomba possui seu contador, e ele precisa ser informado nos abastecimentos.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="local_descarga">Local de descarga</h2>
+   <p>Parecido com o Local de Estoque, este &eacute; mais simples e n&atilde;o h&aacute; <strong>controle r&iacute;gido de estoque</strong>.</p>
+   <p>Isso significa que n&atilde;o haver&aacute; controle de saldo.</p>
+   <p>Um bom exemplo de uso s&atilde;o aqueles locais que ficam no campo, como de c&aacute;lcario e gesso. Ent&atilde;o &eacute; poss&iacute;vel sinalizar o local de descarga quando receber o produto e tamb&eacute;m na sa&iacute;da (ordem de servi&ccedil;o por exemplo). Mas o saldo controlado de estoque, que geram custo, &eacute; o do Local de Estoque.</p>
+   <p>Isso se deve por que ficaria muito complexo controlar o saldo de cada local de descarga, mas se vo&ccedil;&ecirc; quiser nada impede: use Local de Estoque.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="entidade">Entidade</h2>
+   <p>S&atilde;o o cadastro de Fornecedores, Clientes, Vizinhos entre outros.</p>
+   <p>Tudo que tem um CPF ou CNPJ.</p>
+   <p>Este cadastro tem uma funcionalidade bastante &uacute;til caso seja a partir de um CNPJ: digite o cnpj no campo e v&aacute; em "<strong>Recuperar dados</strong>". N&oacute;s iremos at&eacute; o sistema da receita federal e recuperamos todos os dados deste CNPJ.</p>
+   <p>As op&ccedil;&otilde;es l&aacute; no final, "Fornecedor", "Cliente" etc &eacute; auto explicativo. &Eacute; para sinalizar que tipo esta entidade &eacute; e dependendo desta sele&ccedil;&atilde;o ser&aacute; listado nas op&ccedil;&otilde;es de cadastros referente. Por exemplo, terceiro aparecer&aacute; no campo Terceiro no cadastro de Frota.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="entendendo_nuvem">Entendendo a nuvem da upCampo</h2>
+   <p>A nuvem da upCampo &eacute; uma integra&ccedil;&atilde;o com o <a title="Google Drive" href="https://www.google.com.br/drive" target="_blank" rel="noopener"><strong>Google Drive</strong></a>. Isso permite que voc&ecirc; agrupe arquivos da fazenda em uma pasta que fica dentro da conta da upCampo.</p>
+   <p>Desta forma tudo fica organizado: cada talh&atilde;o cadastrado na upCampo cria uma pasta dentro do Google Drive, assim como no cadastro de Safra, Empresa e Fazenda.</p>
+   <p>Como utilizamos integra&ccedil;&atilde;o total com o Google Drive, toda a equipe pode se benefeciar dos recursos do Google que s&atilde;o:</p>
+   <ul>
+      <ul>
+         <li><strong>Trabalhe offline</strong>: n&atilde;o &eacute; preciso acessar a nossa plataforma para salvar um arquivo e nem internet o tempo todo. Basta instalar o programa do Google Drive nos computadores da equipe (ou aplicativo em um smartphone) e ent&atilde;o "jogar" um arquivo para as pastas da fazenda uma c&oacute;pia autom&aacute;tica &eacute; criada na nuvem. Voc&ecirc; edita como se fosse um arquivo local e automaticamente isso &eacute; refletido para a nuvem.</li>
+      </ul>
+   </ul>
+   <p>&nbsp;</p>
+   <ul>
+      <ul>
+         <li><strong>Permiss&otilde;es</strong>: voc&ecirc; pode definir permiss&otilde;es de acesso para cada membro da sua equipe, basta ele possuir um e-mail no Gmail do Google.</li>
+      </ul>
+   </ul>
+   <p>&nbsp;</p>
+   <ul>
+      <ul>
+         <li><strong>Compartilhamento</strong>: uma vez que definiu permiss&otilde;es para cada membro da sua equipe, ao instalar o programa do Google Drive as pastas que ele t&ecirc;m acesso ser&aacute; mantida sincronizada autom&aacute;ticamente, &eacute; como se fosse um servidor (computador central) na sua rede.<br /><br /></li>
+      </ul>
+   </ul>
+   <p>&nbsp;</p>
+   <ul>
+      <li><strong>Seguran&ccedil;a</strong>: como os arquivos ficam com c&oacute;pias na nuvem (internet) estar&aacute; sempre coberto contra imprevistos, como um computador estragar, por exemplo.<br />Tamb&eacute;m t&ecirc;m a quest&atilde;o da confidencialidade: somente os usu&aacute;rios autorizados pela fazenda em quest&atilde;o podem ter acesso a estes arquivos. Um usu&aacute;rio da upCampo &eacute; necess&aacute;rio, para manter centralizado na nossa conta, mas de maneira nenhuma &eacute; visualizado, copiado ou editado qualquer arquivo dentro de <strong>SUA</strong> pasta. Esta &eacute; uma grande vantagem de nossa empresa ser totalmente independente, sem vinculo nenhum com nenhuma grande multinacional como s&atilde;o nossos concorrentes.</li>
+   </ul>
+   <p>&nbsp;</p>
+   <p><strong>T&aacute;, mas e se eu n&atilde;o quiser mais trabalhar com a upCampo, perco tudo? como eu fa&ccedil;o?</strong></p>
+   <p>R: Basta nos avisar que n&oacute;s providenciaremos a mudan&ccedil;a dos arquivos para outra conta que seja somente sua. Se quiser fazer sem comunicar nossa equipe, tamb&eacute;m d&aacute;, pois voc&ecirc;s sempre ter&atilde;o uma c&oacute;pia de todos os arquivos nos computadores da equipe, basta copiar para outro lugar e apagar da pasta da upCampo.</p>
+   <p>&nbsp;</p>
+   <p>Siga vendo o conte&uacute;do abaixo para mais detalhes.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="conta_gmail">Criando uma conta no Gmail</h2>
+   <p>&Eacute; necess&aacute;rio a equipe possuir uma conta no Gmail (servi&ccedil;o de e-mail no Google). Ela &eacute; totalmente gratu&iacute;da.</p>
+   <ol>
+      <ol>
+         <li>Para criar acesso o site: <a title="www.gmail.com" href="https://www.gmail.com" target="_blank" rel="noopener"><strong>www.gmail.com</strong></a>&nbsp;</li>
+      </ol>
+   </ol>
+   <p>&nbsp;</p>
+   <ol>
+      <ol>
+         <li>No canto superior direito existe um bot&atilde;o chamado <strong>"Crie uma Conta"</strong>, pressione ele.<br />Caso voc&ecirc; acesse este caminho e j&aacute; esteja direcionado a um e-mail quer dizer que voc&ecirc; j&aacute; possui uma conta, para novas contas saia dessa atual e v&aacute; para o "Crie uma Conta".</li>
+      </ol>
+   </ol>
+   <p>&nbsp;</p>
+   <ol>
+      <li>Preencha os dados, como nome e sobrenome, nome de usu&aacute;rio (se voc&ecirc; preferir criar uma conta somente para o uso dentro da sua fazenda sugerimos que voc&ecirc; crie assim: <a href="mailto:nome.nomefazenda@gmail.com">nome.nomefazenda@gmail.com</a>.</li>
+   </ol>
+   <p>Pronto! conta criada, agora &eacute; s&oacute; alguem que j&aacute; possuia acesso compartilhar as pastas com esta conta rec&eacute;m criada.</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="baixando_sincronizacao">Baixando o programa para sincroniza&ccedil;&atilde;o offline</h2>
+   <p>O programa do Google Drive &eacute; interessante por que ele cria as pastas que est&atilde;o na nuvem localmente no seu computador e mant&ecirc;m sempre sincronizadas.</p>
+   <p>Isso &eacute; opcional, uma vez que o Google Drive possui uma interface on line onde &eacute; poss&iacute;vel fazer tudo.</p>
+   <p>Para baixar, acesso o site: <a title="www.google.com.br/drive" href="http://www.google.com.br/drive" target="_blank" rel="noopener">www.google.com.br/drive</a>&nbsp;e l&aacute; embaixo, no rodap&eacute;, h&aacute; um link "<strong>Fazer download</strong>".</p>
+   <p>Veja os caminhos atuais (o google pode alterar o caminho, qualquer quebra de endere&ccedil;o nos avise):</p>
+   <ul>
+      <li>O caminho atual para computadore com Windows e Mac &eacute;: <a href="https://tools.google.com/dlpage/drive/?hl=br&amp;utm_source=pt-BR&amp;utm_medium=link&amp;utm_campaign=web&amp;utm_content=dldrive&amp;utm_term=appspagefooter&amp;usp=apps_start#eula" target="_blank" rel="noopener">clique aqui no link</a></li>
+      <li>O caminho atual para celulares Android &eacute;: <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs&amp;hl=pt-BR" target="_blank" rel="noopener">clique aqui no link</a></li>
+      <li>O caminho atual para celulares Iphone &eacute;: <a href="https://itunes.apple.com/us/app/google-drive/id507874739?mt=8" target="_blank" rel="noopener">clique aqui no link</a></li>
+   </ul>
+   <p>Ap&oacute;s o donwload e a instala&ccedil;&atilde;o fa&ccedil;a:&nbsp;</p>
+   <ol>
+      <li>logue com sua conta Gmail.<br /><br /></li>
+      <li>A instala&ccedil;&atilde;o ir&aacute; perguntar quais pastas voc&ecirc; quer manter sincronizadas, marque qual voc&ecirc; quiser, estas pastas locais como "Area de trabalho", "Meus documentos", n&atilde;o fazem parte da integra&ccedil;&atilde;o da upCampo. Por isso use a vontade, &eacute; uma boa pr&aacute;tica.<br /><br /></li>
+      <li>As pastas da upCampo referente a sua fazenda ser&atilde;o sincronizada automaticamente (todas as pastas que esta conta t&ecirc;m permiss&atilde;o).<br /><br /></li>
+      <li>Agora &eacute; s&oacute; salvar arquivos dentro desta pasta local e pronto!</li>
+   </ol>
+   <div class="line">&nbsp;</div>
+   <h2 id="compartilhando_drive_equipe">Compartilhando entre a equipe</h2>
+   <p>Quando a upCampo libera este recurso para a fazenda n&oacute;s autorizamos para uma conta Gmail de voc&ecirc;s o controle total de suas pastas.</p>
+   <p>A partir desta conta voc&ecirc; pode compartilhar com outras pessoas da sua equipe, lembrando que toda a equipe que ir&aacute; acessar precisa ter uma conta Gmail.</p>
+   <ol>
+      <li>Para isso, acesso o Google Drive on line no caminho: <br /><a title="Google Drive" href="https://drive.google.com/" target="_blank" rel="noopener">https://drive.google.com/</a><br /><br /><br /></li>
+      <li>Selecione a pasta desejada;<br /><br /></li>
+      <li>Clique com o bot&atilde;o direito do mouse em cima da pasta;<br /><br /></li>
+      <li>V&aacute; na segunda op&ccedil;&atilde;o "Compartilhar";<br /><br /></li>
+      <li>Ir&aacute; aparecer uma tela para voc&ecirc; digitar os e-mails, basta ir colocando todos os desejados.</li>
+   </ol>
+   <p>Pronto! agora eles poder&atilde;o acessar as pastas.</p>
+   <p>&nbsp;</p>
+   <div class="line">&nbsp;</div>
+   <h2 id="acessando_nuvem_na_plataforma">Acessando a nuvem na Plataforma upCampo</h2>
+   <p>Feito os passos acima, voc&ecirc; j&aacute; deve ter adicionado alguns arquivos para dentro das pastas.</p>
+   <p>Na plataforma upCampo, dentro do cadastro do Talh&atilde;o haver&aacute; uma guia chamada "<strong>Arquivos</strong>". Ali ser&aacute; listado todos os arquivos que est&atilde;o na nuvem.</p>
+   <p>Assim voc&ecirc; pode "Classific&aacute;-los", com uma descri&ccedil;&atilde;o, uma safra, adicionar uma data. Isso facilita depois na procura de algum arquivo.</p>
+   <p>Esta guia "Arquivos" est&aacute; presente na tela de cadastro de Talh&atilde;o, Safra, Empresa e Filial.</p>
+   <p>Existe uma tela chamada "<strong>Central de arquivos</strong>"(menu relat&oacute;rio) onde s&atilde;o exibidos todos os arquivos, com op&ccedil;&otilde;es para pesquisar por nome e data por exemplo. Tamb&eacute;m &eacute; poss&iacute;vel visualizar rapidamente o item desejado.</p>
+   <p>A localiza&ccedil;&atilde;o desta tela &eacute; no menu "<strong>Relat&oacute;rio"</strong>, &eacute; o primeiro item: "<strong>Central de arquivos</strong>".</p>
+   <p>No aplicativo, dentro do talh&atilde;o h&aacute; uma guia "Arquivo" tamb&eacute;m, mas s&oacute; s&atilde;o exibidos os arquivos que foram classificados (com descri&ccedil;&atilde;o).</p>
+   <p>&nbsp;</p>
+</div>
+</div>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<p></p>
+<!-- Popper.JS -->
+<p></p>
+<!-- Bootstrap JS -->
