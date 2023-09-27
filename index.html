@@ -74,17 +74,7 @@
                <li><a href="#classe_produto">Classe de produto</a></li>
                <li><a href="#produto">Produto</a></li>
                <li><a href="#local_estoque">Local de estoque</a></li>
-               <li><a href="#local_descarga">Local de descarga</a></li>
                <li><a href="#entidade">Entidade</a></li>
-            </ul>
-         </li>
-         <li><a class="dropdown-toggle" href="#pageNuvem" data-toggle="collapse" aria-expanded="false">Nuvem</a>
-            <ul id="pageNuvem" class="collapse list-unstyled">
-               <li><a href="#entendendo_nuvem">Entendendo a nuvem da upCampo</a></li>
-               <li><a href="#conta_gmail">Criando conta no Gmail</a></li>
-               <li><a href="#baixando_sincronizacao">Baixando programa para sincroniza&ccedil;&atilde;o offline</a></li>
-               <li><a href="#compartilhando_drive_equipe">Compartilhando entre a equipe</a></li>
-               <li><a href="acessando_nuvem_na_plataforma">Acessando a nuvem de dentro da upCampo</a></li>
             </ul>
          </li>
          <li><a class="dropdown-toggle" href="#pageFrota" data-toggle="collapse" aria-expanded="false">Frota</a>
@@ -104,7 +94,7 @@
       <p>Whatsapp:&nbsp;<strong>67-9 8147 8550 (<a title="Link whatsapp" href="https://api.whatsapp.com/send?phone=+5567981478550&amp;text=Oi%20upCampo, preciso de ajuda!">clique aqui para abrir</a>)</strong></p>
       <p>&nbsp;</p>
       <p><strong><img src="https://static.wixstatic.com/media/482773_de401860dc434eeb82e7e363eb51cc55~mv2.png" alt="upCampoLogo" width="400" height="" /></strong></p>
-      <div>Vers&atilde;o 23.4</div>
+      <div>Vers&atilde;o 23.5</div>
       <div>&nbsp;</div>
       <h2 id="estrutura_cadastro">Entendendo a estrutura de cadastros</h2>
       <p>Empresa &gt; Fazendas (Filiais). Cada empresa pode ter varias fazendas (filiais). Alguns cadastros s&atilde;o compartilhados entre filiais da mesma empresa, um exemplo &eacute; o cadastro de pragas e safra. J&aacute; outros, s&atilde;o espec&iacute;ficos para cada filial, que &eacute; o caso dos Talh&otilde;es.</p>
@@ -114,13 +104,17 @@
          <li><strong>Todos do menu "B&aacute;sico"</strong>: Cultura, Variedade, Praga Safra, Grupo de armadilha, etc.</li>
          <li><strong>Menu "Lavoura"</strong>: Safra.</li>
          <li><strong>Menu "Estoque"</strong>: Classe de produto, Produto, Entidade e configura&ccedil;&atilde;o de rateio.</li>
-         <li><strong>Menu "Operacional"</strong>: Bico, Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
+         <li><strong>Menu "Operacional"</strong>: Tipo formula&ccedil;&atilde;o, princ&iacute;pio ativo.</li>
+         <li><strong>Menu "Frota"</strong>:&nbsp; Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
+         <li><strong>Menu "Armazenagem"</strong>: Bico, Classifica&ccedil;&atilde;o de frota, Plano de manuten&ccedil;&atilde;o.</li>
+         <li>&nbsp;</li>
       </ul>
       <p>Por filial:</p>
       <ul>
          <li><strong>Menu "Lavoura"</strong>: Talh&otilde;es, Plantio safra, Armadilha Safra, Pluviometro, Coleta de fardo, Rastreamento de fardo, Romaneio de colheita, Contrato de venda, Romaneio de Sa&iacute;da.Variedade, Praga Safra, Grupo de armadilha, etc.</li>
          <li><strong>Menu "Estoque"</strong>: Local de estoque, Local de descarga, Pedido, Transferencia entre locais, Emprestimo produto, Movimentacao e Contrato de tercerizados.</li>
-         <li><strong>Menu "Operacional"</strong>: Equipe, frota, saida para frota, abastecimento, ordem de servi&ccedil;o.</li>
+         <li><strong>Menu "Operacional"</strong>: Equipe, Tipo de atividade, Bico, Ordem de servi&ccedil;o.</li>
+         <li><strong>Menu "Frota"</strong>: Frota, OS de manute&ccedil;&atilde;o, Requisi&ccedil;&atilde;o, Abastecimento.</li>
       </ul>
       <h2 id="criando_empresa">Criando a empresas e fazendas</h2>
       <p>Partindo do ponto que voc&ecirc; j&aacute; possua um cadastro na nossa plataforma &eacute; a hora de criar Empresas e Fazendas.</p>
@@ -351,7 +345,7 @@
       <div>
          <h2 id="classe_produto">Organograma estoque e custos</h2>
       </div>
-      <div><strong><img src="https://static.wixstatic.com/media/482773_388ddc9c840440e8bb229acb6ec7ca65~mv2.png" alt="upCampoLogo" width="700" height="383" /></strong></div>
+      <div><strong><img src="https://static.wixstatic.com/media/482773_388ddc9c840440e8bb229acb6ec7ca65~mv2.png" alt="upCampoLogo" width="900" height="492" /></strong></div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
@@ -425,12 +419,12 @@
          <p>Para utilizar o abastecimento, &eacute; preciso fazer alguns ajustes iniciais na estrutura dos cadastros da fazenda. Para isso, siga as etapas:</p>
          <ol>
             <li><strong>Verifique/crie o cadastro do produto</strong> que ser&aacute; utilizado no abastecimento.<br /><br />Onde: Menu Estoque &gt; Produto &amp; Servi&ccedil;o.<br /><br />Exemplo: se &eacute; diesel, &eacute; preciso ter um produto cadastrado, com a <strong>marca&ccedil;&atilde;o de Combust&iacute;vel</strong>, veja a imagem:<br /><br /><img src="https://static.wixstatic.com/media/482773_1e5b481540734224926e1ab6c37aa8c6~mv2.png" alt="" width="500" height="110" /><br /><br /></li>
-            <li><strong>Crie o local de estoque para cada produto</strong>. Em abastecimento n&atilde;o &eacute; poss&iacute;vel ter um local com v&aacute;rios produtos, &eacute; um para cada.<br /><br />Onde: Menu Estoque &gt; Local de estoque.<br /><br /><span style="color: #ff0000;">Aten&ccedil;&atilde;o ao cadastro, &eacute; preciso nele:</span><br /><br /><strong>a) Marcar que &eacute; Combust&iacute;vel/Abastecimento</strong><br /><br /><strong>b) Determinar o campo que vai ser utilizado pelos usuarios no lan&ccedil;amento do abatecimento:</strong><br /><br /><strong>Litros</strong> - o usuario infomar&aacute; apenas os litros, e o sistema ir&aacute; calcular a leitura final do contador geral da bomba.<br /><strong>Leitura inicial e final</strong> - o usu&aacute;rio informar&aacute; o contador inicial e o contador final, e o sistema ir&aacute; calcular a quantidade de litros.<br /><strong>Nenhum</strong> - nenhum campo ser&aacute; exigido, quando a bomba n&atilde;o tem contador geral.<br /><br /><strong>c) Escolher o produto cadastrado no passo 1</strong>, cada local de abastecimento &eacute; somente um produto.<br /><br />Exemplo da tela:<br /><br /><img src="https://static.wixstatic.com/media/482773_4e05fda05d2e438bb94e4bee134dec2e~mv2.png" alt="" width="500" height="246" /><br /><br />d) Op&ccedil;&atilde;o gal&atilde;o: algumas bombas s&atilde;o do padr&atilde;o americano e sua contagem &eacute; a partir de gal&atilde;o (3,78 litros), essa marca&ccedil;&atilde;o serve para que o campo Gal&atilde;o seja exibido em conjunto com o campo Litros na tela de abastecimento.<br /><br /><strong>e) Na guia Bomba</strong>, o sistema ir&aacute; criar automaticamente uma bomba. Voc&ecirc; pode incluir outras bombas, se este local possui mais de uma bomba.<br />No cadastro da bomba &eacute; poss&iacute;vel ajustar a leitura final, ou seja, o contador atual desta bomba (para que no proximo abastecimento o sistema coloque-o como leitura inicial).<br /><strong>Multiplo:</strong> Em alguns casos, a bomba n&atilde;o tem o detalhamento de decimais (ela gira de 10 em 10), para isso utilize o campo multiplo, para especificar quantos decimais &eacute; cada "virada" no contador da bomba.<br /><br />Exemplo da guia bomba:<br /><br /><img src="https://static.wixstatic.com/media/482773_ead75a49fe0b4565864ea9b8ac39e7d3~mv2.png" alt="" width="500" height="148" /><br /><br /><br /><br /></li>
+            <li><strong>Crie o local de estoque para cada produto</strong>. Em abastecimento n&atilde;o &eacute; poss&iacute;vel ter um local com v&aacute;rios produtos, &eacute; um para cada.<br /><br />Onde: Menu Estoque &gt; Local de estoque.<br /><br /><span style="color: #ff0000;">Aten&ccedil;&atilde;o ao cadastro, &eacute; preciso nele:</span><br /><br /><strong>a) Marcar que &eacute; Combust&iacute;vel/Abastecimento</strong><br /><br /><strong>b) Determinar o campo que vai ser utilizado pelos usuarios no lan&ccedil;amento do abatecimento:</strong><br /><br /><strong>Litros</strong> - o usuario infomar&aacute; apenas os litros, e o sistema ir&aacute; calcular a leitura final do contador geral da bomba.<br /><strong>Leitura inicial e final</strong> - o usu&aacute;rio informar&aacute; o contador inicial e o contador final, e o sistema ir&aacute; calcular a quantidade de litros.<br /><strong>Nenhum</strong> - nenhum campo ser&aacute; exigido, quando a bomba n&atilde;o tem contador geral.<br /><br /><strong>c) Escolher o produto cadastrado no passo 1</strong>, cada local de abastecimento &eacute; somente um produto.<br /><br />Exemplo da tela:<br /><br /><img src="https://static.wixstatic.com/media/482773_4e05fda05d2e438bb94e4bee134dec2e~mv2.png" alt="" width="700" height="344" /><br /><br />d) Op&ccedil;&atilde;o gal&atilde;o: algumas bombas s&atilde;o do padr&atilde;o americano e sua contagem &eacute; a partir de gal&atilde;o (3,78 litros), essa marca&ccedil;&atilde;o serve para que o campo Gal&atilde;o seja exibido em conjunto com o campo Litros na tela de abastecimento.<br /><br /><strong>e) Na guia Bomba</strong>, o sistema ir&aacute; criar automaticamente uma bomba. Voc&ecirc; pode incluir outras bombas, se este local possui mais de uma bomba.<br />No cadastro da bomba &eacute; poss&iacute;vel ajustar a leitura final, ou seja, o contador atual desta bomba (para que no proximo abastecimento o sistema coloque-o como leitura inicial).<br /><strong>Multiplo:</strong> Em alguns casos, a bomba n&atilde;o tem o detalhamento de decimais (ela gira de 10 em 10), para isso utilize o campo multiplo, para especificar quantos decimais &eacute; cada "virada" no contador da bomba.<br /><br />Exemplo da guia bomba:<br /><br /><img src="https://static.wixstatic.com/media/482773_ead75a49fe0b4565864ea9b8ac39e7d3~mv2.png" alt="" width="700" height="207" /><br /><br /><br /><br /></li>
             <li><strong>Implante o saldo do produto no local criado no passo 2.</strong><br />Existem duas formas de entrar com o saldo:<br /><br />a) Via tela de Movimenta&ccedil;&atilde;o (menu Estoque &gt; Movimenta&ccedil;&atilde;o de entrada e sa&iacute;da)<br />Preencha os dados da NF, ou da entrada Avula no cabe&ccedil;alho, e nos itens escolha o produto do passo 1, e o local do passo 2, a quantidade e o valor unit&aacute;rio.<br />&Eacute; este o caminho toda vez que chegar uma carga nova de combust&iacute;vel.<br /><br />b) Via invent&aacute;rio (menu Estoque &gt; Invent&aacute;rio)<br />Preencha os dados do cabe&ccedil;alho com o local do passo 2 e nos itens/detalhes escolha o produto do passo 1 seu saldo f&iacute;sico (quantidade) e o valor unit&aacute;rio.<br />Salve e finalize o invet&aacute;rio para o saldo ser implantado.<br /><br /><br /></li>
          </ol>
          <p>Pronto! Agora este local est&aacute; pronto para receber abastecimentos, ou seja, pronto para voc&ecirc; registrar abastecimento de qualquer frota.</p>
          <p><span style="color: #ff0000;"><strong>Lembre-se que no cadastro de frota</strong></span>, &eacute; preciso marcar que ela est&aacute; apta a abastecimento, marque<strong> Exibir em Abstec. e defina se tem horimetro, a capacidade do tanque e o limite de horimetro (entre dois abastecimentos):</strong></p>
-         <p><img src="https://static.wixstatic.com/media/482773_3115f701a3ef4de9b6ec771b3b140ae9~mv2.png" alt="" width="500" height="177" /></p>
+         <p><img src="https://static.wixstatic.com/media/482773_3115f701a3ef4de9b6ec771b3b140ae9~mv2.png" alt="" width="700" height="248" /></p>
          <p>&nbsp;</p>
          <p><strong>Configura&ccedil;&otilde;es adicionais para abastecimento ***</strong><br /><br /></p>
          <p>No cadastro do usuario, na guia Preferenc&ecirc;ncia pode-se autorizar o usu&aacute;rio a alterar a leitura inicial e final de um abastecimento. Por padr&atilde;o, n&atilde;o &eacute; permitido, ent&atilde;o para novos usu&aacute;rios voc&ecirc; deve observar essa quest&atilde;o.<br />O ideal &eacute; que n&atilde;o fique alterando leitura inicial e final, se lan&ccedil;ar todos os abasteicmentos realizados na sequencia que foi abastecido isso n&atilde;o &eacute; necess&aacute;rio (pois a leitura final ser&aacute; calculada corretamente).</p>
@@ -438,95 +432,6 @@
          <p>&nbsp;</p>
       </div>
       <div>&nbsp;</div>
-      <h2 id="entendendo_nuvem">Entendendo a nuvem da upCampo</h2>
-      <p>A nuvem da upCampo &eacute; uma integra&ccedil;&atilde;o com o <a title="Google Drive" href="https://www.google.com.br/drive" target="_blank" rel="noopener"><strong>Google Drive</strong></a>. Isso permite que voc&ecirc; agrupe arquivos da fazenda em uma pasta que fica dentro da conta da upCampo.</p>
-      <p>Desta forma tudo fica organizado: cada talh&atilde;o cadastrado na upCampo cria uma pasta dentro do Google Drive, assim como no cadastro de Safra, Empresa e Fazenda.</p>
-      <p>Como utilizamos integra&ccedil;&atilde;o total com o Google Drive, toda a equipe pode se benefeciar dos recursos do Google que s&atilde;o:</p>
-      <ul>
-         <ul>
-            <li><strong>Trabalhe offline</strong>: n&atilde;o &eacute; preciso acessar a nossa plataforma para salvar um arquivo e nem internet o tempo todo. Basta instalar o programa do Google Drive nos computadores da equipe (ou aplicativo em um smartphone) e ent&atilde;o "jogar" um arquivo para as pastas da fazenda uma c&oacute;pia autom&aacute;tica &eacute; criada na nuvem. Voc&ecirc; edita como se fosse um arquivo local e automaticamente isso &eacute; refletido para a nuvem.</li>
-         </ul>
-      </ul>
-      <p>&nbsp;</p>
-      <ul>
-         <ul>
-            <li><strong>Permiss&otilde;es</strong>: voc&ecirc; pode definir permiss&otilde;es de acesso para cada membro da sua equipe, basta ele possuir um e-mail no Gmail do Google.</li>
-         </ul>
-      </ul>
-      <p>&nbsp;</p>
-      <ul>
-         <ul>
-            <li><strong>Compartilhamento</strong>: uma vez que definiu permiss&otilde;es para cada membro da sua equipe, ao instalar o programa do Google Drive as pastas que ele t&ecirc;m acesso ser&aacute; mantida sincronizada autom&aacute;ticamente, &eacute; como se fosse um servidor (computador central) na sua rede.<br /><br /></li>
-         </ul>
-      </ul>
-      <p>&nbsp;</p>
-      <ul>
-         <li><strong>Seguran&ccedil;a</strong>: como os arquivos ficam com c&oacute;pias na nuvem (internet) estar&aacute; sempre coberto contra imprevistos, como um computador estragar, por exemplo.<br />Tamb&eacute;m t&ecirc;m a quest&atilde;o da confidencialidade: somente os usu&aacute;rios autorizados pela fazenda em quest&atilde;o podem ter acesso a estes arquivos. Um usu&aacute;rio da upCampo &eacute; necess&aacute;rio, para manter centralizado na nossa conta, mas de maneira nenhuma &eacute; visualizado, copiado ou editado qualquer arquivo dentro de <strong>SUA</strong> pasta. Esta &eacute; uma grande vantagem de nossa empresa ser totalmente independente, sem vinculo nenhum com nenhuma grande multinacional como s&atilde;o nossos concorrentes.</li>
-      </ul>
-      <p>&nbsp;</p>
-      <p><strong>T&aacute;, mas e se eu n&atilde;o quiser mais trabalhar com a upCampo, perco tudo? como eu fa&ccedil;o?</strong></p>
-      <p>R: Basta nos avisar que n&oacute;s providenciaremos a mudan&ccedil;a dos arquivos para outra conta que seja somente sua. Se quiser fazer sem comunicar nossa equipe, tamb&eacute;m d&aacute;, pois voc&ecirc;s sempre ter&atilde;o uma c&oacute;pia de todos os arquivos nos computadores da equipe, basta copiar para outro lugar e apagar da pasta da upCampo.</p>
-      <p>&nbsp;</p>
-      <p>Siga vendo o conte&uacute;do abaixo para mais detalhes.</p>
-      <div>&nbsp;</div>
-      <h2 id="conta_gmail">Criando uma conta no Gmail</h2>
-      <p>&Eacute; necess&aacute;rio a equipe possuir uma conta no Gmail (servi&ccedil;o de e-mail no Google). Ela &eacute; totalmente gratu&iacute;da.</p>
-      <ol>
-         <ol>
-            <li>Para criar acesso o site: <a title="www.gmail.com" href="https://www.gmail.com" target="_blank" rel="noopener"><strong>www.gmail.com</strong></a>&nbsp;</li>
-         </ol>
-      </ol>
-      <p>&nbsp;</p>
-      <ol>
-         <ol>
-            <li>No canto superior direito existe um bot&atilde;o chamado <strong>"Crie uma Conta"</strong>, pressione ele.<br />Caso voc&ecirc; acesse este caminho e j&aacute; esteja direcionado a um e-mail quer dizer que voc&ecirc; j&aacute; possui uma conta, para novas contas saia dessa atual e v&aacute; para o "Crie uma Conta".</li>
-         </ol>
-      </ol>
-      <p>&nbsp;</p>
-      <ol>
-         <li>Preencha os dados, como nome e sobrenome, nome de usu&aacute;rio (se voc&ecirc; preferir criar uma conta somente para o uso dentro da sua fazenda sugerimos que voc&ecirc; crie assim: <a href="mailto:nome.nomefazenda@gmail.com">nome.nomefazenda@gmail.com</a>.</li>
-      </ol>
-      <p>Pronto! conta criada, agora &eacute; s&oacute; alguem que j&aacute; possuia acesso compartilhar as pastas com esta conta rec&eacute;m criada.</p>
-      <div>&nbsp;</div>
-      <h2 id="baixando_sincronizacao">Baixando o programa para sincroniza&ccedil;&atilde;o offline</h2>
-      <p>O programa do Google Drive &eacute; interessante por que ele cria as pastas que est&atilde;o na nuvem localmente no seu computador e mant&ecirc;m sempre sincronizadas.</p>
-      <p>Isso &eacute; opcional, uma vez que o Google Drive possui uma interface on line onde &eacute; poss&iacute;vel fazer tudo.</p>
-      <p>Para baixar, acesso o site: <a title="www.google.com.br/drive" href="http://www.google.com.br/drive" target="_blank" rel="noopener">www.google.com.br/drive</a>&nbsp;e l&aacute; embaixo, no rodap&eacute;, h&aacute; um link "<strong>Fazer download</strong>".</p>
-      <p>Veja os caminhos atuais (o google pode alterar o caminho, qualquer quebra de endere&ccedil;o nos avise):</p>
-      <ul>
-         <li>O caminho atual para computadore com Windows e Mac &eacute;: <a href="https://tools.google.com/dlpage/drive/?hl=br&amp;utm_source=pt-BR&amp;utm_medium=link&amp;utm_campaign=web&amp;utm_content=dldrive&amp;utm_term=appspagefooter&amp;usp=apps_start#eula" target="_blank" rel="noopener">clique aqui no link</a></li>
-         <li>O caminho atual para celulares Android &eacute;: <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs&amp;hl=pt-BR" target="_blank" rel="noopener">clique aqui no link</a></li>
-         <li>O caminho atual para celulares Iphone &eacute;: <a href="https://itunes.apple.com/us/app/google-drive/id507874739?mt=8" target="_blank" rel="noopener">clique aqui no link</a></li>
-      </ul>
-      <p>Ap&oacute;s o donwload e a instala&ccedil;&atilde;o fa&ccedil;a:&nbsp;</p>
-      <ol>
-         <li>logue com sua conta Gmail.<br /><br /></li>
-         <li>A instala&ccedil;&atilde;o ir&aacute; perguntar quais pastas voc&ecirc; quer manter sincronizadas, marque qual voc&ecirc; quiser, estas pastas locais como "Area de trabalho", "Meus documentos", n&atilde;o fazem parte da integra&ccedil;&atilde;o da upCampo. Por isso use a vontade, &eacute; uma boa pr&aacute;tica.<br /><br /></li>
-         <li>As pastas da upCampo referente a sua fazenda ser&atilde;o sincronizada automaticamente (todas as pastas que esta conta t&ecirc;m permiss&atilde;o).<br /><br /></li>
-         <li>Agora &eacute; s&oacute; salvar arquivos dentro desta pasta local e pronto!</li>
-      </ol>
-      <div>&nbsp;</div>
-      <h2 id="compartilhando_drive_equipe">Compartilhando entre a equipe</h2>
-      <p>Quando a upCampo libera este recurso para a fazenda n&oacute;s autorizamos para uma conta Gmail de voc&ecirc;s o controle total de suas pastas.</p>
-      <p>A partir desta conta voc&ecirc; pode compartilhar com outras pessoas da sua equipe, lembrando que toda a equipe que ir&aacute; acessar precisa ter uma conta Gmail.</p>
-      <ol>
-         <li>Para isso, acesso o Google Drive on line no caminho: <br /><a title="Google Drive" href="https://drive.google.com/" target="_blank" rel="noopener">https://drive.google.com/</a><br /><br /><br /></li>
-         <li>Selecione a pasta desejada;<br /><br /></li>
-         <li>Clique com o bot&atilde;o direito do mouse em cima da pasta;<br /><br /></li>
-         <li>V&aacute; na segunda op&ccedil;&atilde;o "Compartilhar";<br /><br /></li>
-         <li>Ir&aacute; aparecer uma tela para voc&ecirc; digitar os e-mails, basta ir colocando todos os desejados.</li>
-      </ol>
-      <p>Pronto! agora eles poder&atilde;o acessar as pastas.</p>
-      <p>&nbsp;</p>
-      <div>&nbsp;</div>
-      <h2 id="acessando_nuvem_na_plataforma">Acessando a nuvem na Plataforma upCampo</h2>
-      <p>Feito os passos acima, voc&ecirc; j&aacute; deve ter adicionado alguns arquivos para dentro das pastas.</p>
-      <p>Na plataforma upCampo, dentro do cadastro do Talh&atilde;o haver&aacute; uma guia chamada "<strong>Arquivos</strong>". Ali ser&aacute; listado todos os arquivos que est&atilde;o na nuvem.</p>
-      <p>Assim voc&ecirc; pode "Classific&aacute;-los", com uma descri&ccedil;&atilde;o, uma safra, adicionar uma data. Isso facilita depois na procura de algum arquivo.</p>
-      <p>Esta guia "Arquivos" est&aacute; presente na tela de cadastro de Talh&atilde;o, Safra, Empresa e Filial.</p>
-      <p>Existe uma tela chamada "<strong>Central de arquivos</strong>"(menu relat&oacute;rio) onde s&atilde;o exibidos todos os arquivos, com op&ccedil;&otilde;es para pesquisar por nome e data por exemplo. Tamb&eacute;m &eacute; poss&iacute;vel visualizar rapidamente o item desejado.</p>
-      <p>A localiza&ccedil;&atilde;o desta tela &eacute; no menu "<strong>Relat&oacute;rio"</strong>, &eacute; o primeiro item: "<strong>Central de arquivos</strong>".</p>
-      <p>No aplicativo, dentro do talh&atilde;o h&aacute; uma guia "Arquivo" tamb&eacute;m, mas s&oacute; s&atilde;o exibidos os arquivos que foram classificados (com descri&ccedil;&atilde;o).</p>
       <p>&nbsp;</p>
    </div>
 </div>
